@@ -39,7 +39,7 @@ export const ComboCard = ({ id, name, desc, price, url, features }) => {
           <ul className='mt-3'>
             {features.map((feature, i) => (
               <li className='text-sm my-2' key={i}>
-                <i class='fas fa-check text-green-500 mr-3'></i>
+                <i className='fas fa-check text-green-500 mr-3'></i>
                 {feature}
               </li>
             ))}
