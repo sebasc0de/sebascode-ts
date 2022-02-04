@@ -11,12 +11,13 @@ export const Header = () => {
           <div className='hidden md:flex items-center'>
             <img src='/img/sebas.png' className='h-10' />
           </div>
+          {/* Call to action */}
           <div>
             <a
               className='text-white'
               href='https://api.whatsapp.com/send?phone=+5491151132129'
             >
-              <button className='bg-black text-xs hover:bg-gray-900 tracking-wide text-white h-full w-36 font-medium md:w-44 md:text-sm'>
+              <button className='bg-black text-xs hover:bg-gray-900 tracking-wide text-white h-full w-36 font-medium md:w-44 md:text-sm z-10'>
                 Pedir presupuesto
               </button>
             </a>

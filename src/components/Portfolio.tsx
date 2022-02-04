@@ -54,14 +54,8 @@ const works = [
 export const Portfolio = () => {
   return (
     <div className='p-10 bg-white flex flex-col items-start '>
-      <div className=' flex items-center gap-2'>
-        <h2 className='font-bold text-left mb-0 text-2xl mb-2'>
-          Estos son mis trabajos
-        </h2>
-        <p className='text-gray-500 text-left text-md'>
-          Dale un vistazo al proyecto que mas te llame la atencion de mi
-          portfolio.
-        </p>
+      <div className=' flex items-center'>
+        <h2 className='font-bold text-left text-2xl'>Estos son mis trabajos</h2>
       </div>
 
       {/* Services grid */}
