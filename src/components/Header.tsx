@@ -2,7 +2,7 @@ import { Topbar } from '../Topbar';
 export const Header = () => {
   return (
     <>
-      <div className='fixed z-50 bg-white w-full'>
+      <div className='sticky top-0 z-50 bg-white w-full'>
         <Topbar />
         <div className='bg-white container-fluid border-b border-black/10 h-14 flex justify-between'>
           <div className='flex items-center pl-5'>
