@@ -57,8 +57,8 @@ export const Skills = () => {
     <div className='bg-gray-50 p-10 flex flex-col gap-10'>
       {/* Titulo y descripcion */}
       <div>
-        <h2 className='text-5xl font-black text-center mb-2'>Mis skills</h2>
-        <p className='text-center text-gray-500 text-xl'>
+        <h2 className='font-bold text-left mb-0 text-2xl mb-2'>Mis skills</h2>
+        <p className='text-gray-500 text-left text-md'>
           A continuacion te muestro cuales son las habilidades y tecnologias que
           manejo como desarrollador web.
         </p>

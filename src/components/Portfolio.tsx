@@ -12,7 +12,7 @@ const works = [
   {
     id: 1,
     name: 'Zar del fitness',
-    desc: 'Sitio web de informativo + funcionalidad de tienda online y blog.',
+    desc: 'Sitio web de informativo + funcionalidad de tienda online y blog. dasddas',
     img: '/public/img/zardelfitness.jpg',
     url: '',
     tags: ['wp', 'elementor', 'woocommerce'],
@@ -20,7 +20,7 @@ const works = [
   {
     id: 2,
     name: 'Vision autentic',
-    desc: 'Sitio web de Inmobiliaria, su objetivo es captar leads.',
+    desc: 'Sitio web de Inmobiliaria, su objetivo es captar leads. dadsadsadasdsads',
     img: '/public/img/visionautentic.jpg',
     url: '',
     tags: ['wp', 'elementor', 'woocommerce'],
@@ -53,12 +53,12 @@ const works = [
 
 export const Portfolio = () => {
   return (
-    <div className='p-10 bg-white flex flex-col items-center '>
-      <div className='mb-5'>
-        <h2 className='font-black text-center mb-0 text-5xl mb-2'>
-          Estos son mis <span className='text-blue-500'>trabajos</span>
+    <div className='p-10 bg-white flex flex-col items-start '>
+      <div className=' flex items-center gap-2'>
+        <h2 className='font-bold text-left mb-0 text-2xl mb-2'>
+          Estos son mis trabajos
         </h2>
-        <p className='text-gray-500 text-center text-xl'>
+        <p className='text-gray-500 text-left text-md'>
           Dale un vistazo al proyecto que mas te llame la atencion de mi
           portfolio.
         </p>
