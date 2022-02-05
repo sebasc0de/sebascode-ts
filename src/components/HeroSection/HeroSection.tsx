@@ -92,7 +92,7 @@ export const HeroSection = () => {
           </div>
         </div>
         {/* Derecha */}
-        <div className='px-5 py-10 bg-slate-50 lg:w-1/2'>
+        <div className=' bg-slate-50 lg:w-1/2'>
           {state ? <Computer budget={state} /> : <Dialog />}
         </div>
       </div>
