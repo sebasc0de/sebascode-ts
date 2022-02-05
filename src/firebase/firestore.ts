@@ -16,7 +16,7 @@ import {
 export const fetchWordpressPacks = async () => {
   const q = query(collection(db, 'services'));
 
-  const packs = [];
+  const packs:any = [];
 
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((doc) => {

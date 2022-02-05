@@ -54,7 +54,7 @@ const mySkills = [
 
 export const Skills = () => {
   return (
-    <div className='bg-gray-50 p-10 flex flex-col'>
+    <div className='bg-gray-50 p-3 md:p-10 flex flex-col'>
       {/* Titulo y descripcion */}
       <div>
         <h2 className='font-bold text-left text-2xl'>Mis skills</h2>

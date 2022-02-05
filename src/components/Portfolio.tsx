@@ -53,7 +53,7 @@ const works = [
 
 export const Portfolio = () => {
   return (
-    <div className='p-10 bg-white flex flex-col items-start '>
+    <div id='portfolio' className='p-10 bg-white flex flex-col items-start'>
       <div className=' flex items-center'>
         <h2 className='font-bold text-left text-2xl'>Estos son mis trabajos</h2>
       </div>

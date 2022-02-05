@@ -6,6 +6,8 @@ export const CombosSection = () => {
   // Wordpress packs
   const [packs, setPacks] = useState();
 
+  console.log(packs);
+
   useEffect(() => {
     fetchWordpressPacks().then(setPacks);
   }, []);
