@@ -43,7 +43,7 @@ export const HeroSection = () => {
         <div className='p-3 py-10 md:p-10 grow flex flex-col items-center justify-start gap-8 md:gap-16'>
           {/* Titulo */}
           <div>
-            <h2 className='font-extrabold text-center text-black text-3xl lg:text-4xl'>
+            <h2 className='font-extrabold text-center text-black text-2xl md:text-4xl'>
               Desarrollador front-end
             </h2>
           </div>

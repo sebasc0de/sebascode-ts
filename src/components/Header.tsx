@@ -6,7 +6,7 @@ export const Header = () => {
         <Topbar />
         <div className='bg-white container-fluid border-b border-black/10 h-14 flex justify-between'>
           <div className='flex items-center pl-5'>
-            <p className='font-black text-black'>Sebas</p>
+            <p className='font-bold text-xl'>Sebascode.</p>
           </div>
           <div className='hidden md:flex items-center'>
             <img src='/img/sebas.png' className='h-10' />

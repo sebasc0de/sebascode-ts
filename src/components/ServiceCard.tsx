@@ -58,7 +58,7 @@ export const ServiceCard = ({ name, desc, img, url, tags }: any) => {
             <div
               className={`${colorConverter(
                 tag
-              )} font-bold p-0.5 px-2 superSmall rounded-full text-black uppercase text-white`}
+              )} font-bold p-0.5 px-2 superSmall rounded-full uppercase text-white`}
             >
               {tag}
             </div>
