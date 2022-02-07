@@ -1,8 +1,16 @@
 export const Wordpress = ({ setShowWordpressModal }: any) => {
   return (
-    <div className='flex flex-col-reverse md:flex-row justify-between gap-3'>
+    <div className='relative flex flex-col-reverse md:flex-row justify-between gap-3'>
+      {/* Pop up close button */}
+      <div
+        onClick={() => setShowWordpressModal(false)}
+        className='absolute top-0 right-0 z-50 bg-white h-6 w-6 flex justify-center items-center rounded-md m-1'
+      >
+        <i className='fas fa-times cursor-pointer hover:text-gray-600'></i>
+      </div>
+
       {/* Left section */}
-      <div className='md:w-2/4 p-3 md:p-5 grow flex flex-col items-start justify-start gap-8 md:gap-10'>
+      <div className='h-64 overflow-auto md:h-auto md:w-2/4 p-3 md:p-5 flex flex-col items-start justify-start gap-8 md:gap-10'>
         {/* Titulo */}
         <div className='flex gap-3'>
           <h2 className='font-extrabold text-center text-black text-2xl md:text-4xl'>

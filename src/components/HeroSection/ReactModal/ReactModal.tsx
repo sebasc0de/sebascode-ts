@@ -30,7 +30,7 @@ const ReactModal = ({ showReactModal, setShowReactModal }: any) => {
           initial='hidden'
           exit={'hidden'}
           animate='visible'
-          className='bg-black/60 absolute md:fixed md:h-screen top-0 left-0 z-50'
+          className='bg-black/60 fixed min-h-screen top-0 left-0 z-50'
         >
           <motion.div
             variants={modal}
