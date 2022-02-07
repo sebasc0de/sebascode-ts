@@ -1,12 +1,12 @@
-export const Wordpress = ({ setShowWordpressModal }: any) => {
+export const ReactJS = ({ setShowReactModal }: any) => {
   return (
-    <div className='flex flex-col-reverse md:flex-row justify-between gap-3'>
+    <div className='flex flex-col md:flex-row justify-between gap-3'>
       {/* Left section */}
       <div className='md:w-2/4 p-3 md:p-5 grow flex flex-col items-start justify-start gap-8 md:gap-10'>
         {/* Titulo */}
         <div className='flex gap-3'>
           <h2 className='font-extrabold text-center text-black text-2xl md:text-4xl'>
-            Presupuesto en Wordpress
+            Presupuesto en React js
           </h2>
         </div>
 
@@ -14,7 +14,7 @@ export const Wordpress = ({ setShowWordpressModal }: any) => {
         <div className='flex items-center gap-3 md:gap-5'>
           {/* Img */}
           <div className='bg-cyan-100 rounded-full p-1.5'>
-            <img src='/img/wordpress.png' className='w-20 md:w-8' />
+            <img src='/img/react.png' className='w-20 md:w-8' />
           </div>
           {/* Text */}
           <div className='md:w-96'>
@@ -22,8 +22,9 @@ export const Wordpress = ({ setShowWordpressModal }: any) => {
               ¿ Para quien es este presupuesto ?
             </h2>
             <small className='text-gray-500 text-xs'>
-              Este tipo de presupuestos es para personas que estan comenzando su
-              negocio y necesitan presupuestos economicos.
+              Este tipo de presupuestos se lo recomiendo a empresas con un nivel
+              de ventas constante, con necesidad de añadir otro canal de ventas
+              a su negocio.
             </small>
           </div>
         </div>
@@ -33,22 +34,17 @@ export const Wordpress = ({ setShowWordpressModal }: any) => {
           {/* Web informativa presupuesto */}
           <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-xs font-bold text-zinc-700 items-center'>
             <img src='/img/information.png' className='w-5 mr-3' />
-            Web informativa: desde $75.99 USD
+            Web informativa: desde $200 USD
           </div>
           {/* Blog presupuesto */}
           <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-xs font-bold text-zinc-700 items-center'>
             <img src='/img/blog.png' className='w-5 mr-3' />
-            Informativa + Blog: desde $149.99 USD
-          </div>
-          {/* Cursos online */}
-          <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-xs font-bold text-zinc-700 items-center'>
-            <img src='/img/learning.png' className='w-5 mr-3' />
-            Web de cursos: desde $200 USD
+            Blog: desde $200 USD
           </div>
           {/* e-Commerce presupuesto */}
           <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-xs font-bold text-zinc-700 items-center'>
             <img src='/img/bag.png' className='w-5 mr-3' />
-            eCommerce: desde $285 USD
+            eCommerce: desde $200 USD
           </div>
           {/* Custom presupuesto */}
           <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-xs font-bold text-zinc-700 items-center'>
@@ -70,8 +66,9 @@ export const Wordpress = ({ setShowWordpressModal }: any) => {
                 Pedir presupuesto
               </button>
             </a>
+
             <button
-              onClick={() => setShowWordpressModal(false)}
+              onClick={() => setShowReactModal(false)}
               className='bg-slate-50 p-2 text-sm rounded-md border border-gray-200/40 text-gray-500'
             >
               Cerrar ventana
@@ -80,10 +77,7 @@ export const Wordpress = ({ setShowWordpressModal }: any) => {
         </div>
       </div>
       {/* Right section */}
-      <div
-        id='gradient'
-        className='rounded-t-md md:rounded-l-none md:rounded-r-md md:w-2/4 relative'
-      >
+      <div id='gradient' className='rounded-r-md md:w-2/4 relative'>
         <img
           src='/img/render-default.png'
           className='md:w-11/12 relative fade-in-top'

@@ -1,8 +1,8 @@
 export const ReactJS = ({ setShowReactModal }: any) => {
   return (
-    <div className='flex flex-col md:flex-row justify-between gap-3'>
+    <div className='flex flex-col-reverse md:flex-row justify-between gap-3'>
       {/* Left section */}
-      <div className='md:w-2/4 p-3 md:p-5 grow flex flex-col items-start justify-start gap-8 md:gap-10'>
+      <div className='md:w-2/4 md:p-5 p-3 py-5 md:h-fit flex flex-col items-start justify-start gap-8 md:gap-10'>
         {/* Titulo */}
         <div className='flex gap-3'>
           <h2 className='font-extrabold text-center text-black text-2xl md:text-4xl'>
@@ -77,7 +77,10 @@ export const ReactJS = ({ setShowReactModal }: any) => {
         </div>
       </div>
       {/* Right section */}
-      <div id='gradient' className='rounded-r-md md:w-2/4 relative'>
+      <div
+        id='gradient'
+        className='rounded-t-md md:rounded-l-none md:rounded-r-md md:w-2/4 relative'
+      >
         <img
           src='/img/render-default.png'
           className='md:w-11/12 relative fade-in-top'
