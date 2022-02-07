@@ -4,7 +4,7 @@ const works = [
   {
     id: 0,
     name: 'Malen Prop',
-    desc: 'Sitio web de Inmobiliaria, su objetivo es captar leads. Lalaladmsalsdm',
+    desc: 'Sitio web informativo con boton de WhatsApp. El sitio web fue pensado por el cliente',
     img: '/public/img/malenProp.jpg',
     url: '',
     tags: ['wp', 'elementor'],
@@ -12,7 +12,7 @@ const works = [
   {
     id: 1,
     name: 'Zar del fitness',
-    desc: 'Sitio web de informativo + funcionalidad de tienda online y blog. dasddas',
+    desc: 'Sitio web de informativo + funcionalidad de tienda online y blog incorporados',
     img: '/public/img/zardelfitness.jpg',
     url: '',
     tags: ['wp', 'elementor', 'woocommerce'],
@@ -20,7 +20,7 @@ const works = [
   {
     id: 2,
     name: 'Vision autentic',
-    desc: 'Sitio web de Inmobiliaria, su objetivo es captar leads. dadsadsadasdsads',
+    desc: 'Sitio web informativo + funcionalidad de tienda online. ',
     img: '/public/img/visionautentic.jpg',
     url: '',
     tags: ['wp', 'elementor', 'woocommerce'],
@@ -28,7 +28,7 @@ const works = [
   {
     id: 3,
     name: 'LM Viajes Privados',
-    desc: 'Sitio web de Inmobiliaria, su objetivo es captar leads.',
+    desc: 'Sitio web informativo, con formulario para captar leads y boton de WhatsApp.',
     img: '/img/lmviajes.jpg',
     url: '',
     tags: ['wp', 'elementor', 'woocommerce'],
@@ -36,7 +36,7 @@ const works = [
   {
     id: 4,
     name: 'Sebas code',
-    desc: 'Sitio web de Inmobiliaria, su objetivo es captar leads.',
+    desc: 'Blog con entradas en Sanity.io, changelog desarrollado de cero, carrito de compras y Auth con firebase.',
     img: '/img/sebascode.jpg',
     url: '',
     tags: ['reactjs', 'firebase', 'commercejs', 'sanity'],
@@ -44,10 +44,10 @@ const works = [
   {
     id: 5,
     name: 'JALF Dashboard',
-    desc: 'Sitio web de Inmobiliaria, su objetivo es captar leads.',
+    desc: 'Aplicacion web para gestionar stock, pedidos, clientes y organizacion del negocio.',
     img: '/img/jalfdashboard.jpg',
     url: '',
-    tags: ['reactjs', 'firebase', 'redux', 'sanity'],
+    tags: ['reactjs', 'firebase', 'redux'],
   },
 ];
 
@@ -59,7 +59,7 @@ export const Portfolio = () => {
       </div>
 
       {/* Services grid */}
-      <div className='grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full mt-5'>
+      <div className='grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5'>
         {works.map((work) => (
           <ServiceCard
             key={work.id}

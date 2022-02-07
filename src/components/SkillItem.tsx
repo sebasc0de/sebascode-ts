@@ -4,7 +4,7 @@ export const SkillItem = ({ title, desc, img }: any) => {
       <img src={img} className='w-20 mb-3' />
       <div>
         <h2 className='text-center font-semibold'>{title}</h2>
-        <p className='text-center text-xs'>{desc}</p>
+        <p className='text-center text-gray-500 text-xs'>{desc}</p>
       </div>
     </div>
   );

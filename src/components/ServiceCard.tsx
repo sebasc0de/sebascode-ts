@@ -31,7 +31,7 @@ const colorConverter = (techonology: string): string => {
 
 export const ServiceCard = ({ name, desc, img, url, tags }: any) => {
   return (
-    <div className='h-full bg-white border border-gray-200 rounded-sm flex-col'>
+    <div className='h-fit bg-white border border-gray-200 rounded-sm flex-col'>
       {/* Header */}
       <div className='relative '>
         <img src={img} alt='' />
@@ -44,7 +44,7 @@ export const ServiceCard = ({ name, desc, img, url, tags }: any) => {
         </div>
       </div>
       {/* Body */}
-      <div className='p-3'>
+      <div className='p-3 h-28'>
         <div className='pb-5'>
           <p className='text-black text-md font-semibold'>{name}</p>
           <small className='text-gray-500'>{desc}</small>
