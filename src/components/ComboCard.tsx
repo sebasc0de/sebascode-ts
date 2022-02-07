@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export const ComboCard = ({ id, name, desc, price, url, features }) => {
+export const ComboCard = ({ id, name, desc, price, url, features }: any) => {
   const [selectedId, setSelectedId] = useState(null);
 
   return (
@@ -37,7 +37,7 @@ export const ComboCard = ({ id, name, desc, price, url, features }) => {
             ¿Que incluye?
           </small>
           <ul className='mt-3'>
-            {features.map((feature, i) => (
+            {features.map((feature: any, i: number) => (
               <li className='text-sm my-2' key={i}>
                 <i className='fas fa-check text-green-500 mr-3'></i>
                 {feature}
@@ -84,9 +84,9 @@ export const ComboCard = ({ id, name, desc, price, url, features }) => {
                   ¿Que incluye?
                 </small>
                 <ul className='mt-3'>
-                  {features.map((feature, i) => (
+                  {features.map((feature: any, i: number) => (
                     <li className='text-sm my-2' key={i}>
-                      <i class='fas fa-check text-green-500 mr-3'></i>
+                      <i className='fas fa-check text-green-500 mr-3'></i>
                       {feature}
                     </li>
                   ))}

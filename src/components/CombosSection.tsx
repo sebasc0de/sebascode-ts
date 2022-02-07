@@ -4,7 +4,7 @@ import { ComboCard } from './ComboCard';
 
 export const CombosSection = () => {
   // Wordpress packs
-  const [packs, setPacks] = useState();
+  const [packs, setPacks] = useState<any[]>();
 
   console.log(packs);
 

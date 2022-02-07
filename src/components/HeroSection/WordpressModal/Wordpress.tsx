@@ -60,9 +60,11 @@ export const Wordpress = ({ setShowWordpressModal }: any) => {
           {/* Actions buttons */}
           <div className='mt-3 md:mt-10 flex gap-2'>
             {/* Action 1 */}
-            <button className='bg-black text-white rounded-md p-2 text-sm'>
-              Apply
-            </button>
+            <a href='https://api.whatsapp.com/send?phone=+5491151132129'>
+              <button className='bg-black text-white rounded-md p-2 text-sm'>
+                Pedir presupuesto
+              </button>
+            </a>
             <button
               onClick={() => setShowWordpressModal(false)}
               className='bg-slate-50 p-2 text-sm rounded-md border border-gray-200/40 text-gray-500'

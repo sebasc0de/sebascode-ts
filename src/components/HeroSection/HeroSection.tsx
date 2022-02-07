@@ -69,11 +69,10 @@ export const HeroSection = () => {
             </button>
             {/* Action */}
             <div className='mt-10'>
-              <a
-                href='#'
-                className='bg-black text-white rounded-lg p-2 text-xs'
-              >
-                <button>Contactar</button>
+              <a href='https://api.whatsapp.com/send?phone=+5491151132129'>
+                <button className='bg-black text-white rounded-md p-2 text-sm font-medium'>
+                  WhatsApp!
+                </button>
               </a>
             </div>
           </div>

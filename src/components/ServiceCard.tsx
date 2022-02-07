@@ -35,7 +35,7 @@ export const ServiceCard = ({ name, desc, img, url, tags }: any) => {
       {/* Header */}
       <div className='relative '>
         <img src={img} alt='' />
-        <div className='absolute top-0 flex justify-end w-full'>
+        <div className='hidden absolute top-0 flex justify-end w-full'>
           <a href={url}>
             <button className='m-3 bg-none border-2 border-white rounded-full text-xs text-white p-1 px-5 font-bold hover:bg-white hover:text-black transition ease-in-out delay-10'>
               Ver mas

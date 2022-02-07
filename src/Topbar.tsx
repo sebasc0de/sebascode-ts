@@ -1,7 +1,9 @@
 export const Topbar = () => {
   return (
     <div className='bg-slate-50 border-b border-gray-200 p-3 flex items-center justify-between'>
-      <div className='text-gray-600 text-xs font-medium'>ESPAÑOL</div>
+      <div className='text-gray-600 text-xs font-medium underline cursor-not-allowed'>
+        ESPAÑOL
+      </div>
 
       <ul className='flex gap-4 items-center'>
         <li className='text-zinc-800 text-sm'>
