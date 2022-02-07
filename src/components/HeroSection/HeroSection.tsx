@@ -1,43 +1,25 @@
-import { Computer } from './Computer';
 import { useState } from 'react';
 import { Dialog } from './Dialog';
-
-// Type of budget
-type Budget = {
-  name: string;
-  price: number;
-  icon: string;
-};
-
-// Budgets info
-const react: Budget = {
-  name: 'React JS',
-  price: 520,
-  icon: '/img/react.png',
-};
-
-const wordpress: Budget = {
-  name: 'Wordpress',
-  price: 220,
-  icon: '/img/wordpress.png',
-};
+import ReactModal from './ReactModal/ReactModal';
+import WordpressModal from './WordpressModal/WordpressModal';
 
 export const HeroSection = () => {
-  // Budget selector state
-  const [state, setState] = useState(undefined);
+  // React Modal
+  const [showReactModal, setShowReactModal] = useState(false);
 
-  const budgetHandler = ({ target }: any) => {
-    if (target.name === 'react') {
-      setState(react);
-      console.log(state);
-    } else {
-      setState(wordpress);
-      console.log(state);
-    }
-  };
+  // Wordpress Modal
+  const [showWordpressModal, setShowWordpressModal] = useState(false);
 
   return (
     <>
+      <ReactModal
+        showReactModal={showReactModal}
+        setShowReactModal={setShowReactModal}
+      />
+      <WordpressModal
+        showWordpressModal={showWordpressModal}
+        setShowWordpressModal={setShowWordpressModal}
+      />
       <div className='flex flex-col lg:flex-row lg:min-h-auto'>
         {/* Izquierda */}
         <div className='p-3 py-10 md:p-10 grow flex flex-col items-center justify-start gap-8 md:gap-16'>
@@ -70,27 +52,21 @@ export const HeroSection = () => {
           {/* Action */}
           <div className='flex flex-col gap-3 w-11/12 md:w-96'>
             {/* React js budget */}
-            <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex'>
+            <button
+              onClick={() => setShowReactModal(true)}
+              className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex text-sm font-bold text-zinc-700 cursor-pointer hover:bg-slate-50'
+            >
               <img src='/img/react.png' className='w-5 mr-3' />
-              <input
-                type='text'
-                onClick={budgetHandler}
-                name='react'
-                value='Presupuestos en React JS'
-                className='text-sm font-bold text-zinc-700 cursor-pointer w-full focus:outline-none caret-transparent'
-              />
-            </div>
+              Presupuestos en React JS
+            </button>
             {/* Wordpress budget */}
-            <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex'>
+            <button
+              onClick={() => setShowWordpressModal(true)}
+              className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex text-sm font-bold text-zinc-700 cursor-pointer hover:bg-slate-50'
+            >
               <img src='/img/wordpress.png' className='w-5 mr-3' />
-              <input
-                type='text'
-                onClick={budgetHandler}
-                name='wordpress'
-                value='Presupuestos en Wordpress'
-                className='text-sm font-bold text-zinc-700 cursor-pointer w-full focus:outline-none caret-transparent'
-              />
-            </div>
+              Presupuestos en Wordpress
+            </button>
             {/* Action */}
             <div className='mt-10'>
               <a
@@ -103,8 +79,8 @@ export const HeroSection = () => {
           </div>
         </div>
         {/* Derecha */}
-        <div className=' bg-slate-50 lg:w-1/2'>
-          {state ? <Computer budget={state} /> : <Dialog />}
+        <div className=' bg-slate-50 lg:w-1/2 relative'>
+          <Dialog />
         </div>
       </div>
     </>

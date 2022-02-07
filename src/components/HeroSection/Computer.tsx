@@ -14,8 +14,6 @@ export const Computer = ({ budget }: any) => {
   return (
     <motion.div
       id='gradient'
-      variants={variants}
-      animate={budget.name === 'React JS' ? 'react' : 'wordpress'}
       className='lg:items-end px-5 py-10 overflow-x-hidden md:h-screen'
     >
       <div className='relative'>
@@ -25,7 +23,7 @@ export const Computer = ({ budget }: any) => {
         />
         {/* React icon */}
         <div className='absolute w-9 md:w-16 bg-white rounded-md drop-shadow-sm border border-gray-50 p-1 top-20 lg:top-20 right-5 lg:right-10 drop-shadow-md fade-in-right'>
-          <img src={budget.icon} />
+          <img src='' />
         </div>
         {/* App price */}
         <div className='absolute -bottom-5 md:bottom-10 left-5 bg-white rounded-md p-3 drop-shadow-md fade-in-left'>
@@ -33,11 +31,9 @@ export const Computer = ({ budget }: any) => {
             <img src='/img/money-bag.png' className='w-9 object-contain' />
             <div>
               <h3 className='text-black text-xs lg:text-sm font-bold mb-0'>
-                Proyectos en {budget.name}
+                Proyectos en
               </h3>
-              <p className='text-gray-500 text-xs font-light'>
-                Desde ${budget.price} USD
-              </p>
+              <p className='text-gray-500 text-xs font-light'>Desde $25 USD</p>
             </div>
           </div>
         </div>

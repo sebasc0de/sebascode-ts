@@ -8,9 +8,6 @@ export const Header = () => {
           <div className='flex items-center pl-5'>
             <p className='font-bold text-xl'>Sebascode.</p>
           </div>
-          <div className='hidden md:flex items-center'>
-            <img src='/img/sebas.png' className='h-10' />
-          </div>
           {/* Call to action */}
           <div>
             <a
