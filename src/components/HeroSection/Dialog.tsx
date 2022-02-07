@@ -12,7 +12,7 @@ export const Dialog = () => {
           Hola, soy Sebas 👋🏻
         </div>
 
-        {/* Sugerencia */}
+        {/* Portfolio */}
         <div className='absolute float font-bold text-md drop-shadow-md bg-white rounded-md text-xs md:text-md  p-3 text-zinc-800 -bottom-10 md:-bottom-5 md:-right-20 right-10 flex items-center gap-2'>
           <img src='/img/portfolio.png' className='w-5' />
           <a href='#portfolio'> Visita mi portfolio</a>

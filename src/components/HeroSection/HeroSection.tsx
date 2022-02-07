@@ -69,25 +69,36 @@ export const HeroSection = () => {
 
           {/* Action */}
           <div className='flex flex-col gap-3 w-11/12 md:w-96'>
+            {/* React js budget */}
             <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex'>
               <img src='/img/react.png' className='w-5 mr-3' />
               <input
                 type='text'
                 onClick={budgetHandler}
                 name='react'
-                value='React JS'
+                value='Presupuestos en React JS'
                 className='text-sm font-bold text-zinc-700 cursor-pointer w-full focus:outline-none caret-transparent'
               />
             </div>
+            {/* Wordpress budget */}
             <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex'>
               <img src='/img/wordpress.png' className='w-5 mr-3' />
               <input
                 type='text'
                 onClick={budgetHandler}
                 name='wordpress'
-                value='Wordpress y Elementor'
+                value='Presupuestos en Wordpress'
                 className='text-sm font-bold text-zinc-700 cursor-pointer w-full focus:outline-none caret-transparent'
               />
+            </div>
+            {/* Action */}
+            <div className='mt-10'>
+              <a
+                href='#'
+                className='bg-black text-white rounded-lg p-2 text-xs'
+              >
+                <button>Contactar</button>
+              </a>
             </div>
           </div>
         </div>
