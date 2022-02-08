@@ -1,24 +1,16 @@
 import { useState } from 'react';
 import { Dialog } from './Dialog';
 import ReactModal from './ReactModal/ReactModal';
-import WordpressModal from './WordpressModal/WordpressModal';
 
 export const HeroSection = () => {
   // React Modal
   const [showReactModal, setShowReactModal] = useState(false);
-
-  // Wordpress Modal
-  const [showWordpressModal, setShowWordpressModal] = useState(false);
 
   return (
     <>
       <ReactModal
         showReactModal={showReactModal}
         setShowReactModal={setShowReactModal}
-      />
-      <WordpressModal
-        showWordpressModal={showWordpressModal}
-        setShowWordpressModal={setShowWordpressModal}
       />
       <div className='flex flex-col lg:flex-row lg:min-h-auto'>
         {/* Izquierda */}
@@ -60,10 +52,7 @@ export const HeroSection = () => {
               Presupuestos en React JS
             </button>
             {/* Wordpress budget */}
-            <button
-              onClick={() => setShowWordpressModal(true)}
-              className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex text-sm font-bold text-zinc-700 cursor-pointer hover:bg-slate-50'
-            >
+            <button className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex text-sm font-bold text-zinc-700 cursor-pointer hover:bg-slate-50'>
               <img src='/img/wordpress.png' className='w-5 mr-3' />
               Presupuestos en Wordpress
             </button>

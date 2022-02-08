@@ -1,4 +1,4 @@
-import { Skills } from '../interfaces/Skills';
+import { Skills } from '../../interfaces/Skills';
 
 export const SkillItem = (skill: Skills) => {
   return (
