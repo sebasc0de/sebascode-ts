@@ -61,14 +61,7 @@ export const Portfolio = () => {
       {/* Services grid */}
       <div className='grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5'>
         {works.map((work) => (
-          <ServiceCard
-            key={work.id}
-            name={work.name}
-            img={work.img}
-            url={work.url}
-            desc={work.desc}
-            tags={work.tags}
-          />
+          <ServiceCard key={work.id} {...work} />
         ))}
       </div>
       {/* End services grid */}

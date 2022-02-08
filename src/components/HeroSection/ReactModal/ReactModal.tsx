@@ -8,13 +8,11 @@ const backdrop = {
 
 const modal = {
   hidden: {
-    y: '-110vh',
     opacity: 0,
   },
   visible: {
-    y: '0px',
     opacity: 1,
-    transition: { delay: 0.5 },
+    transition: { delay: 0.5, duration: 1 },
   },
 };
 
@@ -36,7 +34,7 @@ const ReactModal = ({ showReactModal, setShowReactModal }: any) => {
             variants={modal}
             initial='hidden'
             animate='visible'
-            className='bg-white m-3 rounded-md flex flex-col gap-3'
+            className='bg-white md:h-screen m-1 rounded-md md:rounded-none md:m-0 flex flex-col gap-3'
           >
             <ReactJS setShowReactModal={setShowReactModal} />
           </motion.div>

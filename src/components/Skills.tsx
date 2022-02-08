@@ -64,12 +64,7 @@ export const Skills = () => {
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-5'>
         {/* Skill card */}
         {mySkills.map((skill) => (
-          <SkillItem
-            key={skill.id}
-            title={skill.title}
-            desc={skill.desc}
-            img={skill.img}
-          />
+          <SkillItem key={skill.id} {...skill} />
         ))}
       </div>
     </div>

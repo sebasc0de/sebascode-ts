@@ -2,13 +2,12 @@ import { Topbar } from '../Topbar';
 export const Header = () => {
   return (
     <>
-      <div className='sticky top-0 z-50 bg-white'>
+      {/* <div className='sticky top-0 z-50 bg-white'>
         <Topbar />
         <div className='bg-white container-fluid border-b border-black/10 h-14 flex justify-between'>
           <div className='flex items-center pl-5'>
             <p className='font-bold text-xl'>Sebascode.</p>
           </div>
-          {/* Call to action */}
           <div>
             <a
               className='text-white'
@@ -20,7 +19,7 @@ export const Header = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

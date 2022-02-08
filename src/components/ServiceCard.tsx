@@ -1,3 +1,4 @@
+import { Works } from '../interfaces/Works';
 const colorConverter = (techonology: string): string => {
   switch (techonology) {
     case 'wp':
@@ -29,14 +30,14 @@ const colorConverter = (techonology: string): string => {
   }
 };
 
-export const ServiceCard = ({ name, desc, img, url, tags }: any) => {
+export const ServiceCard = (work: Works) => {
   return (
     <div className='h-fit bg-white border border-gray-200 rounded-sm flex-col'>
       {/* Header */}
       <div className='relative '>
-        <img src={img} alt='' />
+        <img src={work.img} />
         <div className='hidden absolute top-0 flex justify-end w-full'>
-          <a href={url}>
+          <a href={work.url}>
             <button className='m-3 bg-none border-2 border-white rounded-full text-xs text-white p-1 px-5 font-bold hover:bg-white hover:text-black transition ease-in-out delay-10'>
               Ver mas
             </button>
@@ -46,15 +47,15 @@ export const ServiceCard = ({ name, desc, img, url, tags }: any) => {
       {/* Body */}
       <div className='p-3 h-28'>
         <div className='pb-5'>
-          <p className='text-black text-md font-semibold'>{name}</p>
-          <small className='text-gray-500'>{desc}</small>
+          <p className='text-black text-md font-semibold'>{work.name}</p>
+          <small className='text-gray-500'>{work.desc}</small>
         </div>
       </div>
       {/* Footer */}
       <div className='border-t border-gray-100 flex items-center justify-between p-3'>
         <div className='md:hidden lg:block text-xs text-gray-400'>⚡</div>
         <div className='flex gap-1'>
-          {tags.map((tag: string) => (
+          {work.tags.map((tag: string) => (
             <div
               className={`${colorConverter(
                 tag

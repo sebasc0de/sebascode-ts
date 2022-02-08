@@ -8,13 +8,11 @@ const backdrop = {
 
 const modal = {
   hidden: {
-    y: '-110vh',
     opacity: 0,
   },
   visible: {
-    y: '0',
     opacity: 1,
-    transition: { delay: 0.5 },
+    transition: { delay: 0.5, duration: 1 },
   },
 };
 
@@ -32,13 +30,13 @@ const WordpressModal = ({ showWordpressModal, setShowWordpressModal }: any) => {
           initial='hidden'
           exit={'hidden'}
           animate='visible'
-          className='bg-black/60 fixed h-screen top-0 left-0 z-50'
+          className='bg-black/60 fixed min-h-screen top-0 left-0 z-50'
         >
           <motion.div
             variants={modal}
             initial='hidden'
             animate='visible'
-            className='bg-white m-3 rounded-md flex flex-col gap-3'
+            className='bg-white md:h-screen m-1 rounded-md md:rounded-none md:m-0 flex flex-col gap-3'
           >
             <Wordpress setShowWordpressModal={setShowWordpressModal} />
           </motion.div>

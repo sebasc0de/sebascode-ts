@@ -1,14 +1,6 @@
-html {
-  scroll-behavior: smooth;
-}
-
-.Small {
-  font-size: 10px;
-}
-
-.superSmall {
-  font-size: 8.25px;
-}
+@import url('./css/bases/global.css');
+@import url('./css/bases/variables.css');
+@import url('./css/bases/colors.css');
 
 /* Hero section animations */
 

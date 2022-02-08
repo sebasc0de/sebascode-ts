@@ -1,15 +1,16 @@
+import { Web } from '../Web';
 export const ReactJS = ({ setShowReactModal }: any) => {
   return (
     <div className='relative flex flex-col-reverse md:flex-row justify-between gap-3'>
       {/* Pop up close button */}
       <div
         onClick={() => setShowReactModal(false)}
-        className='absolute top-0 right-0 z-50 bg-white h-6 w-6 flex justify-center items-center rounded-md m-1'
+        className='absolute top-0 right-0 z-50 bg-white h-6 w-6 flex justify-center items-center rounded-md m-1 drop-shadow-lg'
       >
         <i className='fas fa-times cursor-pointer hover:text-gray-600'></i>
       </div>
       {/* Left section */}
-      <div className='overflow-auto h-64 md:h-auto md:overflow-auto md:w-2/4 md:p-5 p-3 py-5 md:h-fit flex flex-col items-start justify-start gap-8 md:gap-10'>
+      <div className='h-64 overflow-auto md:h-auto md:w-2/4 p-3 md:p-20 flex flex-col items-start justify-start gap-8 md:gap-10'>
         {/* Titulo */}
         <div className='flex gap-3'>
           <h2 className='font-extrabold text-center text-black text-2xl md:text-4xl'>
@@ -48,23 +49,11 @@ export const ReactJS = ({ setShowReactModal }: any) => {
             <img src='/img/blog.png' className='w-5 mr-3' />
             Blog: desde $200 USD
           </div>
-          {/* e-Commerce presupuesto */}
-          <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-xs font-bold text-zinc-700 items-center'>
-            <img src='/img/bag.png' className='w-5 mr-3' />
-            eCommerce: desde $200 USD
-          </div>
-          {/* Custom presupuesto */}
-          <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-xs font-bold text-zinc-700 items-center'>
-            <img src='/img/custom.png' className='w-5 mr-3' />
-            Proyecto personalizado: Consultar
-          </div>
-
           {/* Aclaracion */}
           <small className='text-gray-500 Small'>
             * Todos los presupuestos se pueden personalizar, estos son los
             costos minimos para cada tipo de proyecto. IVA no incluido
           </small>
-
           {/* Actions buttons */}
           <div className='mt-3 md:mt-10 flex gap-2'>
             {/* Action 1 */}
@@ -86,12 +75,9 @@ export const ReactJS = ({ setShowReactModal }: any) => {
       {/* Right section */}
       <div
         id='gradient'
-        className='rounded-t-md md:rounded-l-none md:rounded-r-md md:w-2/4 relative'
+        className='rounded-t-md h-96 md:h-screen md:rounded-none md:w-2/4'
       >
-        <img
-          src='/img/render-default.png'
-          className='md:w-11/12 relative fade-in-top'
-        />
+        <Web />
       </div>
     </div>
   );
