@@ -5,17 +5,17 @@ const techBenefits: Benefit[] = [
   {
     name: 'Diseños personalizados',
     desc: 'Disfruta de peliculas y series en streaning durante una llamada de Facetime. La reproduccion y los controles se sincronizan para que todos rian.',
-    img: 'img/1.png',
+    img: 'img/color-wheel.png',
   },
   {
     name: 'Poco tiempo de espera',
     desc: 'Disfruta de peliculas y series en streaning durante una llamada de Facetime. La reproduccion y los controles se sincronizan para que todos rian.',
-    img: 'img/1.png',
+    img: 'img/time.png',
   },
   {
     name: 'Presupuestos economicos',
     desc: 'Disfruta de peliculas y series en streaning durante una llamada de Facetime. La reproduccion y los controles se sincronizan para que todos rian.',
-    img: 'img/1.png',
+    img: 'img/saving.png',
   },
 ];
 

@@ -31,7 +31,6 @@ const Modal = ({ showModal = true, setShowModal }: any) => {
             animate='visible'
             className='bg-white md:h-screen rounded-md md:rounded-none md:m-0 flex flex-col gap-3'
           >
-            <Header />
             <ModalHeroSection />
             <Benefits />
           </motion.div>

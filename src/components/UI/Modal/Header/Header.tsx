@@ -18,7 +18,7 @@ export const Header = () => {
       variants={variant}
       initial='hidden'
       animate='visible'
-      className='glass bg-gray-100/40 fixed w-full p-3 md:px-20 flex justify-between items-center z-50 glass border-b border-gray-400/20'
+      className='glass hidden bg-gray-100/40 p-3 md:px-20 flex justify-between items-center z-50 glass border-b border-gray-400/20'
     >
       <div>
         <button className='text-blue-600 font-medium text-xs'>

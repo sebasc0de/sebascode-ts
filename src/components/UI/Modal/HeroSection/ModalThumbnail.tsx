@@ -1,35 +1,25 @@
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { Selector } from '../UI/Selector';
+import { WebWindow } from '../UI/WebWindow';
 
-const animation = {
-  hidden: {
-    opacity: 0,
-    x: '200px',
-  },
-  visible: {
-    opacity: 1,
-    x: '0px',
-    transition: { delay: 0.5, duration: 1 },
-  },
-};
+const items = ['Tiempo de carga', 'Presupuesto', 'Opcion 3'];
 
 export const ModalThumbnail = () => {
+  // Show window
+  const [showWindow, setShowWindow] = useState(false);
+
   return (
     <>
       <div
         id='gradient'
-        className='h-5/6 flex items-center justify-center max-h-screen'
+        className='relative h-5/6 p-5 md:p-20 flex items-center justify-center h-screen md:max-h-screen'
       >
-        <AnimatePresence exitBeforeEnter>
-          {/* Background image */}
-          <motion.img
-            initial='hidden'
-            variants={animation}
-            animate='visible'
-            exit={'hidden'}
-            src='/img/render.png'
-            className='relative md:max-w-4xl'
-          />
-        </AnimatePresence>
+        {/* Background image */}
+        <WebWindow showWindow={showWindow} />
+
+        {/* Controls */}
+        <Selector setShowWindow={setShowWindow} showWindow={showWindow} />
       </div>
     </>
   );
