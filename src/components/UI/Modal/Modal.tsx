@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { ModalHeroSection } from './HeroSection/ModalHeroSection';
-import { WhyChoose } from './WhyChoose/WhyChoose';
+import { Header } from './Header/Header';
+import { Benefits } from './Benefits/Benefits';
 
 const backdrop = {
   visible: { opacity: 1 },
@@ -18,19 +19,25 @@ const modal = {
 
 const Modal = ({ showModal = true, setShowModal }: any) => {
   return (
-    <AnimatePresence exitBeforeEnter onExitComplete={() => setShowModal(false)}>
-      {showModal && (
-        <motion.div
-          variants={modal}
-          initial='hidden'
-          animate='visible'
-          className='bg-white md:h-screen rounded-md md:rounded-none md:m-0 flex flex-col gap-3'
-        >
-          <ModalHeroSection />
-          <WhyChoose />
-        </motion.div>
-      )}
-    </AnimatePresence>
+    <>
+      <AnimatePresence
+        exitBeforeEnter
+        onExitComplete={() => setShowModal(false)}
+      >
+        {showModal && (
+          <motion.div
+            variants={modal}
+            initial='hidden'
+            animate='visible'
+            className='bg-white md:h-screen rounded-md md:rounded-none md:m-0 flex flex-col gap-3'
+          >
+            <Header />
+            <ModalHeroSection />
+            <Benefits />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 

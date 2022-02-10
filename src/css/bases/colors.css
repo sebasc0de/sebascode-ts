@@ -1,6 +1,7 @@
 :root {
   --apple-bg-gray: #252525;
   --apple-text-gray-100: #d6d6d6;
+  --apple-text-gray-500: #86868b;
   --apple-text-gray-900: #1d1d1f;
 }
 
@@ -11,6 +12,10 @@
 
 .text-apple {
   color: var(--apple-text-gray);
+}
+
+.text-apple-500 {
+  color: var(--apple-text-gray-500);
 }
 
 .text-apple-900 {
