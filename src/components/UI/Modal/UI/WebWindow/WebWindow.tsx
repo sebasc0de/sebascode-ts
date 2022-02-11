@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { WelcomePage } from './eCommerce/eCommerce';
+import { Ecommerce } from './eCommerce/Ecommerce';
 
 interface window {
   showWindow: boolean;
@@ -38,7 +38,7 @@ export const WebWindow = ({ showWindow }: window) => {
 
           {/* Window content */}
           <div className='relative'>
-            <WelcomePage />
+            <Ecommerce state={true} />
           </div>
         </motion.div>
       )}

@@ -34,7 +34,7 @@ const Welcome = ({ setShowSelector }: any) => {
           animate={state ? 'visible' : 'hidden'}
           className='relative bg-white font-medium text-sm text-apple-900 shadow-xl z-50 glass p-3 rounded-lg'
         >
-          Selecciona una caracteristica
+          Elige una opcion!
         </motion.div>
       </div>
     </div>

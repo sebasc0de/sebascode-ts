@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
-import { DialogStore } from '../../../../zustand/DialogStore';
+import { DialogStore, SelectorStore } from '../../../../zustand/index';
 
 // Animation
 const animation = {
@@ -15,15 +15,22 @@ const animation = {
   },
 };
 
-export const Selector = ({ showWindow, setShowWindow }: any) => {
-  // Toggle show handler zustand
-  const store = DialogStore();
-  const hide = DialogStore((state) => state.hideShowHandler);
-  console.log(store);
+export const Selector = () => {
+  // Store
+  const dialogStore = DialogStore();
+  const selectorStore = SelectorStore();
 
-  // Options window
+  // Ecommerce show toggler
+  const setShowEcommerce = SelectorStore((state) => state.toggleShowEcommerce);
+  console.log('mi estado cambiado', selectorStore);
+
+  // Toggle show handler zustand
+  const hide = DialogStore((state) => state.hideShowHandler);
+
+  // Show window with options selector
   const [show, setShow] = useState(false);
 
+  // Indicator to selector
   const [tilt, setTilt] = useState(true);
 
   // Window handler
@@ -61,23 +68,31 @@ export const Selector = ({ showWindow, setShowWindow }: any) => {
             animate={show ? 'visible' : 'hidden'}
             className='p-3 flex flex-col gap-2 rounded-md bg-white'
           >
+            {/* Option 4 */}
+            <button className='text-md block text-center text-apple-900 font-medium'>
+              Cursos online
+            </button>
+            {/* Option 3 */}
+            <button className='text-md block text-center text-apple-900 font-medium'>
+              Blog
+            </button>
             {/* Option 2 */}
             <button className='text-md block text-center text-apple-900 font-medium'>
-              Medios de pago
+              Landing page
             </button>
             {/* Option 1 */}
             <button
-              onClick={() => setShowWindow(!showWindow)}
+              onClick={setShowEcommerce}
               className='text-md block text-center text-apple-900 font-medium'
             >
-              Mostrar ventana
+              eCommerce
             </button>
           </motion.div>
           <button
             onClick={windowHandler}
             className='py-2 flex gap-2 items-center px-5 shadow-xl text-apple-900 font-medium bg-white rounded-lg text-xs md:text-sm hover:bg-gray-100'
           >
-            Desarrollos en wordpress
+            Elige una opcion..
           </button>
         </div>
       </motion.div>

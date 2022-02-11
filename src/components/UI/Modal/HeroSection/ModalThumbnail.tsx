@@ -18,14 +18,14 @@ export const ModalThumbnail = () => {
         id='gradient'
         className='relative h-5/6 p-5 md:p-20 flex items-center justify-center h-screen md:max-h-screen'
       >
-        {/* Initial welcome - Step 1 */}
+        {/* Welcome dialog */}
         <Welcome
           message='Hello'
           techName='React'
           setShowSelector={setShowSelector}
         />
 
-        {/* Background image */}
+        {/* Window for display options */}
         <WebWindow showWindow={showWindow} />
 
         {/* Controls - Steps selections*/}
