@@ -1,0 +1,18 @@
+.window::-webkit-scrollbar {
+  width: 5px;
+}
+
+.window::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+  border-radius: 10px;
+}
+
+.window::-webkit-scrollbar-track {
+  background: #fbfbfb;
+}
+
+.hero {
+  background-image: url('./img/background1.jpg');
+  background-size: cover;
+  background-position: center;
+}

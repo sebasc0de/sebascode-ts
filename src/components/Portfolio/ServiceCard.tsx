@@ -1,4 +1,4 @@
-import { Works } from '../interfaces/Works';
+import { Works } from '../../interfaces/Works';
 const colorConverter = (techonology: string): string => {
   switch (techonology) {
     case 'wp':
@@ -57,6 +57,7 @@ export const ServiceCard = (work: Works) => {
         <div className='flex gap-1'>
           {work.tags.map((tag: string) => (
             <div
+              key={tag}
               className={`${colorConverter(
                 tag
               )} font-bold p-0.5 px-2 superSmall rounded-full uppercase text-white`}
