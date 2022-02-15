@@ -30,18 +30,24 @@ const colorConverter = (techonology: string): string => {
   }
 };
 
-export const ServiceCard = (work: Works) => {
+export const PortfolioCard = (work: Works) => {
   return (
     <div className='h-fit bg-white border border-gray-200 rounded-sm flex-col'>
       {/* Header */}
       <div className='relative '>
         <img src={work.img} />
-        <div className='hidden absolute top-0 flex justify-end w-full'>
-          <a href={work.url}>
-            <button className='m-3 bg-none border-2 border-white rounded-full text-xs text-white p-1 px-5 font-bold hover:bg-white hover:text-black transition ease-in-out delay-10'>
-              Ver mas
-            </button>
-          </a>
+        <div className='absolute top-0 flex justify-end w-full'>
+          {work.online ? (
+            <a href={work.url}>
+              <button className='m-3 bg-none border-2 border-white rounded-full text-xs text-white p-1 px-5 font-bold hover:bg-white hover:text-black transition ease-in-out delay-10'>
+                Ver mas
+              </button>
+            </a>
+          ) : (
+            <span className='m-3 bg-none border-2 border-white rounded-full text-xs text-white p-1 px-5 font-bold hover:bg-white hover:text-black transition ease-in-out delay-10'>
+              Offline
+            </span>
+          )}
         </div>
       </div>
       {/* Body */}

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { DialogStore } from '../../zustand/DialogStore';
+import { DialogStore } from '../../../zustand/DialogStore';
 
 const animation = {
   hidden: {

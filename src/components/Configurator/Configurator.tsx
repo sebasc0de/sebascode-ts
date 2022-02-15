@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { Welcome } from './Welcome/Welcome';
-import { Step1 } from './Step1/Step1';
+import { Step1 } from './Steps/Step1/Step1';
+import { Step2 } from './Steps/Step2/Step2';
 
 const backdrop = {
   visible: { opacity: 1 },
@@ -28,7 +29,8 @@ const Configurator = () => {
           className='bg-white h-screen flex flex-col justify-center items-center'
         >
           {/* <Welcome /> */}
-          <Step1 />
+          {/* <Step1 /> */}
+          <Step2 />
         </motion.div>
       </AnimatePresence>
     </>

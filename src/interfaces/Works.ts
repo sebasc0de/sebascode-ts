@@ -1,8 +1,9 @@
 export interface Works {
-        id: number,
-        name: string,
-        desc: string
-        img: string,
-        url?: string,
-        tags: string[],
+  id: number;
+  name: string;
+  desc: string;
+  img: string;
+  url?: string;
+  online: boolean;
+  tags: string[];
 }

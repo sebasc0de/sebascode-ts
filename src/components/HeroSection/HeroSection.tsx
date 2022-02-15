@@ -36,7 +36,7 @@ export const HeroSection = () => {
               <small className='text-gray-500 text-xs md:text-sm'>
                 Tengo 28 años, vivo en Buenos Aires y realizo proyectos en todo
                 LATAM. Mis proyectos son personalizados, mis presupuestos
-                tambien.
+                también.
               </small>
             </div>
           </div>
@@ -44,18 +44,15 @@ export const HeroSection = () => {
           {/* Action */}
           <div className='flex flex-col gap-3 w-11/12 md:w-96'>
             {/* React js budget */}
-            <button
-              onClick={() => setShowReactModal(true)}
-              className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex text-sm font-bold text-zinc-700 cursor-pointer hover:bg-slate-50'
-            >
+            <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-sm font-bold text-zinc-700 '>
               <img src='/img/react.png' className='w-5 mr-3' />
-              Presupuestos en React JS
-            </button>
+              Disponible para proyectos React JS
+            </div>
             {/* Wordpress budget */}
-            <button className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 cursor-pointer flex text-sm font-bold text-zinc-700 cursor-pointer hover:bg-slate-50'>
+            <div className='bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-sm font-bold text-zinc-700 '>
               <img src='/img/wordpress.png' className='w-5 mr-3' />
-              Presupuestos en Wordpress
-            </button>
+              Disponible para proyectos Wordpress
+            </div>
             {/* Action */}
             <div className='mt-10'>
               <a href='https://api.whatsapp.com/send?phone=+5491151132129'>

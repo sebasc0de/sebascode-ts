@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { ConfiguratorSelector } from '../ConfiguratorSelector/ConfiguratorSelector';
-import ConfiguratorDialog from '../ConfiguratorDialog/ConfiguratorDialog';
+import { ConfiguratorSelector } from '../../ConfiguratorSelector/ConfiguratorSelector';
+import ConfiguratorDialog from '../../ConfiguratorDialog/ConfiguratorDialog';
 
 const animation = {
   hidden: {

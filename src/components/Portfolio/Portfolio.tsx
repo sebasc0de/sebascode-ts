@@ -1,12 +1,14 @@
-import { ServiceCard } from './ServiceCard';
+import { Works } from '../../interfaces/Works';
+import { PortfolioCard } from './PortfolioCard';
 
-const works = [
+const works: Works[] = [
   {
     id: 0,
     name: 'Malen Prop',
     desc: 'Sitio web informativo con boton de WhatsApp. El sitio web fue pensado por el cliente',
     img: '/img/malenProp.jpg',
     url: '',
+    online: true,
     tags: ['wp', 'elementor'],
   },
   {
@@ -15,6 +17,7 @@ const works = [
     desc: 'Sitio web de informativo + funcionalidad de tienda online y blog incorporados',
     img: '/img/zardelfitness.jpg',
     url: '',
+    online: true,
     tags: ['wp', 'elementor', 'woocommerce'],
   },
   {
@@ -23,6 +26,7 @@ const works = [
     desc: 'Sitio web informativo + funcionalidad de tienda online. ',
     img: '/img/visionautentic.jpg',
     url: '',
+    online: false,
     tags: ['wp', 'elementor', 'woocommerce'],
   },
   {
@@ -31,6 +35,7 @@ const works = [
     desc: 'Sitio web informativo, con formulario para captar leads y boton de WhatsApp.',
     img: '/img/lmviajes.jpg',
     url: '',
+    online: false,
     tags: ['wp', 'elementor', 'woocommerce'],
   },
   {
@@ -39,6 +44,7 @@ const works = [
     desc: 'Blog con entradas en Sanity.io, changelog desarrollado de cero, carrito de compras y Auth con firebase.',
     img: '/img/sebascode.jpg',
     url: '',
+    online: true,
     tags: ['reactjs', 'firebase', 'commercejs', 'sanity'],
   },
   {
@@ -47,24 +53,28 @@ const works = [
     desc: 'Aplicacion web para gestionar stock, pedidos, clientes y organizacion del negocio.',
     img: '/img/jalfdashboard.jpg',
     url: '',
+    online: false,
     tags: ['reactjs', 'firebase', 'redux'],
   },
 ];
 
 export const Portfolio = () => {
   return (
-    <div id='portfolio' className='p-10 bg-white flex flex-col items-start'>
-      <div className=' flex items-center'>
-        <h2 className='font-bold text-left text-2xl'>Estos son mis trabajos</h2>
+    <>
+      <div id='portfolio' className='p-10 bg-white flex flex-col items-start'>
+        <div className=' flex items-center'>
+          <h2 className='font-bold text-left text-2xl'>
+            Estos son mis trabajos
+          </h2>
+        </div>
+        {/* Services grid */}
+        <div className='grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5'>
+          {works.map((work) => (
+            <PortfolioCard key={work.id} {...work} />
+          ))}
+        </div>
+        {/* End services grid */}
       </div>
-
-      {/* Services grid */}
-      <div className='grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5'>
-        {works.map((work) => (
-          <ServiceCard key={work.id} {...work} />
-        ))}
-      </div>
-      {/* End services grid */}
-    </div>
+    </>
   );
 };
