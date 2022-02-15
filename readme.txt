@@ -7,8 +7,9 @@
 - Presupuestos personalizables (economicos)
 
 
-## CARACTERISTICAS GENERALES ###
+## Configurador de preuspuesto por pasos ###
 
-- Medios de pago
-- Como trabajo 
-- 
+Bienvenida - Breve explicacion
+Paso 1: Elige tipo de pagina web (con preview)
+Paso 2: Que cantidad de visitas crees que puede llegar a tener tu sitio web ?
+Paso 3: 

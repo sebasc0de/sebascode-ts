@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { useDialog } from '../../../../hooks/useDialog';
-import { DialogStore } from '../../../../zustand/DialogStore';
+import { DialogStore } from '../../zustand/DialogStore';
 
 const animation = {
   hidden: {
@@ -12,13 +11,12 @@ const animation = {
   },
 };
 
-const Welcome = ({ setShowSelector }: any) => {
-  const store = DialogStore();
-  const state = DialogStore((state) => state.show);
+const ConfiguratorDialog = () => {
+  const { show, message } = DialogStore();
   const toggleShowHandler = DialogStore((state) => state.toggleShowHandler);
 
   return (
-    <div className='absolute bottom-5 left-5'>
+    <div className='absolute bottom-5 left-5 z-10'>
       <div className='flex items-center gap-2'>
         <motion.img
           variants={animation}
@@ -31,14 +29,14 @@ const Welcome = ({ setShowSelector }: any) => {
         <motion.div
           variants={animation}
           initial='hidden'
-          animate={state ? 'visible' : 'hidden'}
+          animate={show ? 'visible' : 'hidden'}
           className='relative bg-white font-medium text-sm text-apple-900 shadow-xl z-50 glass p-3 rounded-lg'
         >
-          Elige una opcion!
+          {message}
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default Welcome;
+export default ConfiguratorDialog;

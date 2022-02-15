@@ -8,7 +8,7 @@ interface MyState {
   toggleShowBlog?: () => void;
   toggleShowLandingPage?: () => void;
   toggleShowCourses?: () => void;
-  toggleShowEcommerce?: () => void;
+  toggleShowEcommerce: () => void;
 }
 
 export const SelectorStore = create(
@@ -16,7 +16,7 @@ export const SelectorStore = create(
     return {
       blog: false,
       landingPage: false,
-      ecommerce: false,
+      ecommerce: true,
       courses: false,
       toggleShowEcommerce: () =>
         setState((state) => ({ ecommerce: !state.ecommerce })),
