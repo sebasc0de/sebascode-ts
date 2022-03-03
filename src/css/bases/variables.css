@@ -2,6 +2,10 @@
   backdrop-filter: blur(10px);
 }
 
+.width-5 {
+  width: 5px;
+}
+
 /*Sizing variables*/
 .h-100 {
   height: 26rem;

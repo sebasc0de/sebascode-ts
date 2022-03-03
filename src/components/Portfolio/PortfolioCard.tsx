@@ -4,6 +4,15 @@ const colorConverter = (techonology: string): string => {
     case 'wp':
       return 'bg-blue-500';
 
+    case 'html':
+      return 'bg-red-500';
+
+    case 'php':
+      return 'bg-cyan-500';
+
+    case 'bootstrap':
+      return 'bg-purple-500';
+
     case 'elementor':
       return 'bg-pink-500';
 
@@ -21,9 +30,6 @@ const colorConverter = (techonology: string): string => {
 
     case 'commercejs':
       return 'bg-green-500';
-
-    case 'sanity':
-      return 'bg-red-500';
 
     default:
       return 'bg-gray-500';
@@ -44,8 +50,8 @@ export const PortfolioCard = (work: Works) => {
               </button>
             </a>
           ) : (
-            <span className='m-3 bg-none border-2 border-white rounded-full text-xs text-white p-1 px-5 font-bold hover:bg-white hover:text-black transition ease-in-out delay-10'>
-              Offline
+            <span className='m-3 bg-none border-2 border-white rounded-full text-xs text-white p-1 px-5 font-bold'>
+              Inactivo / en desarrollo
             </span>
           )}
         </div>

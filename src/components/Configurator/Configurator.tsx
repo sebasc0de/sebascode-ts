@@ -29,8 +29,8 @@ const Configurator = () => {
           className='bg-white h-screen flex flex-col justify-center items-center'
         >
           {/* <Welcome /> */}
-          {/* <Step1 /> */}
-          <Step2 />
+          <Step1 />
+          {/* <Step2 /> */}
         </motion.div>
       </AnimatePresence>
     </>

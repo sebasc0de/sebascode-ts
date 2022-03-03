@@ -47,8 +47,8 @@ export const Step1 = () => {
 
             {/* Window content */}
             <div className='relative h-72 md:h-104'>
-              {/* <Courses />
-            <Ecommerce /> */}
+              {/* <Courses /> */}
+              <Ecommerce />
             </div>
           </motion.div>
         </div>
