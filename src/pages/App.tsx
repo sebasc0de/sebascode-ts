@@ -3,7 +3,7 @@ import { HeroSection } from '../components/HeroSection/HeroSection';
 import { Meet } from '../components/Meet/Meet';
 import { Portfolio } from '../components/Portfolio/Portfolio';
 import { Skills } from '../components/Skills/Skills';
-import { Testimonials } from '../components/Testimonials/Testimonials';
+import { TestimonialCarrousel } from '../components/Testimonials/TestimonialsCarrousel';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <HeroSection />
       <Skills />
       <Portfolio />
-      <Testimonials />
       <Meet />
+      <TestimonialCarrousel />
     </>
   );
 }
