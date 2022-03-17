@@ -4,7 +4,7 @@ import { SkillItem } from './SkillItem';
 const mySkills = [
   {
     id: 1,
-    title: 'React JS',
+    title: 'React',
     desc: '1 año de experiencia en React.',
     img: '/img/react.png',
   },
@@ -22,7 +22,7 @@ const mySkills = [
   },
   {
     id: 4,
-    title: 'Tailwind CSS',
+    title: 'Tailwind',
     desc: '2 años de experiencia con Tailwind',
     img: '/img/tailwind.png',
   },
@@ -54,14 +54,14 @@ const mySkills = [
 
 export const Skills = () => {
   return (
-    <div className='bg-gray-50 p-3 md:p-10 flex flex-col'>
+    <div className="bg-gray-50 p-3 md:p-10 flex flex-col">
       {/* Titulo y descripcion */}
       <div>
-        <h2 className='font-bold text-left text-2xl'>Mis skills</h2>
+        <h2 className="font-bold text-left text-2xl">Mis skills</h2>
       </div>
 
       {/* Grilla de habilidades */}
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-5'>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-5">
         {/* Skill card */}
         {mySkills.map((skill) => (
           <SkillItem key={skill.id} {...skill} />
