@@ -1,0 +1,40 @@
+{
+  "heroSection": {
+    "main-title": "Desarrollador front end",
+    "aboutProjects": "Sobre mis proyectos",
+    "aboutProjectsText": "Tengo 28 años, vivo en Buenos Aires y realizo proyectos en todo LATAM. Mis proyectos son personalizados, mis presupuestos también.",
+    "reactWebApps": "Desarrollo de aplicaciones web con React JS",
+    "wordpressWebs": "Diseño de sitios web con wordpress",
+    "contactButton": "Contactar"
+  },
+  "heroSectionDialog": {
+    "greeting": "Hola, soy Sebas👋🏻",
+    "portfolio": "Mis trabajos"
+  },
+  "skillsSection": {
+    "React": "1 año de experiencia con React JS",
+    "Redux": "1 año de experiencia con Redux",
+    "Firebase": "1 años de experiencia con Firebase",
+    "Tailwind": "2 años de experiencia con Tailwind",
+    "Bootstrap": "4 años de experiencia con Bootstrap",
+    "Photoshop": "10+ años de experiencia con Photoshop",
+    "Wordpress": "4 años de experiencia con Wordpress",
+    "Elementor": "3 años de experiencia con Elementor"
+  },
+  "portfolio": {
+    "title": "Estos son algunos de mis trabajos"
+  },
+  "portfolioCards": {
+    "stateTag": {
+      "online": "Ver mas",
+      "inactive": "En desarrollo/inactivo"
+    },
+    "malenProp": "Sitio web informativo con botón de WhatsApp. El sitio web fue pensado por el cliente."
+  },
+  "meeting": {
+    "small": "¿TIENES DUDAS?",
+    "title": "Agenda una reunion conmigo!",
+    "desc": "Preguntame todo lo que necesites en una reunion mediante Google Meet / Zoom.",
+    "button": "Agendar"
+  }
+}
