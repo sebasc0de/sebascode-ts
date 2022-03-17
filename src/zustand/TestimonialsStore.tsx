@@ -10,7 +10,7 @@ export const TestimonialStore = create(
     return {
       show: false,
       setShow: () => {
-        setState((state) => ({ show: !state.show })), console.log('gato');
+        setState((state) => ({ show: !state.show }));
       },
     };
   }
