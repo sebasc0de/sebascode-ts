@@ -3,7 +3,8 @@ import { Works } from '../interfaces/Works';
 export const works: Works[] = [
   {
     id: 0,
-    name: 'Malen Prop',
+    name: 'malenProp',
+    displayName: 'Malen Prop',
     desc: 'Sitio web informativo con botón de WhatsApp. El sitio web fue pensado por el cliente.',
     img: '/img/malenProp.jpg',
     url: 'https://www.malenprop.com/',
@@ -12,7 +13,8 @@ export const works: Works[] = [
   },
   {
     id: 1,
-    name: 'Zar del fitness',
+    name: 'zarDelFitness',
+    displayName: 'Zar del fitness',
     desc: 'Sitio web de informativo + funcionalidad de tienda online y blog incorporados',
     img: '/img/zardelfitness.jpg',
     url: 'https://zardelfitness.com.ar/',
@@ -21,7 +23,8 @@ export const works: Works[] = [
   },
   {
     id: 2,
-    name: 'Vision autentic',
+    name: 'visionAutentic',
+    displayName: 'Vision autentic',
     desc: 'Sitio web informativo + funcionalidad de tienda online. ',
     img: '/img/visionautentic.jpg',
     url: '',
@@ -30,7 +33,8 @@ export const works: Works[] = [
   },
   {
     id: 3,
-    name: 'LM Viajes Privados',
+    name: 'LMViajes',
+    displayName: 'LM Viajes Privados',
     desc: 'Sitio web informativo, con formulario para captar leads y botón de WhatsApp.',
     img: '/img/lmviajes.jpg',
     url: '',
@@ -39,7 +43,8 @@ export const works: Works[] = [
   },
   {
     id: 4,
-    name: 'Sebas code',
+    name: 'SebasBlog',
+    displayName: 'Sebas code blog',
     desc: 'Blog con entradas en Sanity.io, changelog desarrollado de cero, carrito de compras y Auth con firebase.',
     img: '/img/sebascode.jpg',
     url: 'https://sebastiandiaz.com.ar/',
@@ -48,7 +53,8 @@ export const works: Works[] = [
   },
   {
     id: 5,
-    name: 'JALF Dashboard',
+    name: 'JALF-dashboard',
+    displayName: 'JALF Dashboard',
     desc: 'Aplicación web para gestionar stock, pedidos, clientes y organización del negocio.',
     img: '/img/jalfdashboard.jpg',
     url: '',
@@ -57,7 +63,8 @@ export const works: Works[] = [
   },
   {
     id: 6,
-    name: '1000 tickets',
+    name: '1000tickets',
+    displayName: '1000 tickets',
     desc: 'Sitio web de tickets online, diseñado con el estilo que pidio el cliente y desarrollado por un experto en PHP.',
     img: '/img/1000tickets.jpg',
     url: 'https://1000tickets.com.ar/',
@@ -66,7 +73,8 @@ export const works: Works[] = [
   },
   {
     id: 7,
-    name: 'Barboza amoblamientos',
+    name: 'barboza',
+    displayName: 'Barboza amoblamientos',
     desc: 'Sitio web con funcionalidad de tienda online y informacion detallada sobre como trabajan.',
     img: '/img/barboza.jpg',
     url: '',
@@ -75,7 +83,8 @@ export const works: Works[] = [
   },
   {
     id: 8,
-    name: 'Regodeo catering',
+    name: 'regodeo',
+    displayName: 'Regodeo catering',
     desc: 'Sitio web informativo sobre servicios de catering',
     img: '/img/regodeo.jpg',
     url: '',
@@ -84,7 +93,8 @@ export const works: Works[] = [
   },
   {
     id: 9,
-    name: 'Casa Gabra',
+    name: 'casagabra',
+    displayName: 'Casa Gabra',
     desc: 'Tienda online con sistema de login / registro de usuarios',
     img: '/img/casagabra.jpg',
     url: '',
@@ -93,7 +103,8 @@ export const works: Works[] = [
   },
   {
     id: 10,
-    name: 'Mer poledance',
+    name: 'merPoledance',
+    displayName: 'Mer poledance',
     desc: 'Sitio web educativo para escuela de Poledance. ',
     img: '/img/merPoledance.jpg',
     url: '',
@@ -102,7 +113,8 @@ export const works: Works[] = [
   },
   {
     id: 11,
-    name: 'Federagro',
+    name: 'federagro',
+    displayName: 'Federagro',
     desc: 'Sitio web informativo basado en el diseño que pidio el cliente',
     img: '/img/federagro.jpg',
     url: 'https://federagro.ar',

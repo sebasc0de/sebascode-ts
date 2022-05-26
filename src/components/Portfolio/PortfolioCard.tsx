@@ -28,8 +28,10 @@ export const PortfolioCard = (work: Works) => {
       {/* Body */}
       <div className="p-3 h-28">
         <div className="pb-5">
-          <p className="text-black text-md font-semibold">{work.name}</p>
-          <small className="text-gray-500">{work.desc}</small>
+          <p className="text-black text-md font-semibold">{work.displayName}</p>
+          <small className="text-gray-500">
+            {t(`portfolioDesc.${work.name}`)}
+          </small>
         </div>
       </div>
       {/* Footer */}

@@ -12,6 +12,7 @@
     "portfolio": "Visit portfolio"
   },
   "skillsSection": {
+    "title": "My skills",
     "React": "1 year of experience with React JS",
     "Redux": "1 year of experience with Redux",
     "Firebase": "1 year of experience with Firebase",
@@ -28,8 +29,21 @@
     "stateTag": {
       "online": "View more",
       "inactive": "Development/Inactive"
-    },
-    "malenProp": "Sitio web informativo con botón de WhatsApp. El sitio web fue pensado por el cliente."
+    }
+  },
+  "portfolioDesc": {
+    "malenProp": "Informative web with whatsapp button and properties info as extension",
+    "zarDelFitness": "Informative web + blog + shop online functions",
+    "visionAutentic": "eCommerce + informative web",
+    "LMViajes": "Informative web + lead form",
+    "SebasBlog": "Blog + cart function and changelog with notices",
+    "JALF-dashboard": "Dashboard with most relevant functions for my own business. Stock control, orders management, tools, shippings, etc",
+    "1000tickets": "Tickets online shop",
+    "barboza": "eCommerce with informative sections",
+    "regodeo": "Informative web",
+    "casagabra": "eCommerce with login/register form and informative sections",
+    "merPoledance": "Blog + online courses function",
+    "federagro": "Informative web + lead form"
   },
   "meeting": {
     "small": "have questions?",

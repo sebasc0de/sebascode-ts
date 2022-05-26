@@ -12,6 +12,7 @@
     "portfolio": "Mis trabajos"
   },
   "skillsSection": {
+    "title": "Mis skills",
     "React": "1 año de experiencia con React JS",
     "Redux": "1 año de experiencia con Redux",
     "Firebase": "1 años de experiencia con Firebase",
@@ -26,10 +27,23 @@
   },
   "portfolioCards": {
     "stateTag": {
-      "online": "Ver mas",
-      "inactive": "En desarrollo/inactivo"
-    },
-    "malenProp": "Sitio web informativo con botón de WhatsApp. El sitio web fue pensado por el cliente."
+      "online": "View more",
+      "inactive": "Development/Inactive"
+    }
+  },
+  "portfolioDesc": {
+    "malenProp": "Sitio web informativo con botón de WhatsApp. El sitio web fue pensado por el cliente.",
+    "zarDelFitness": "Sitio web de informativo + funcionalidad de tienda online y blog incorporados",
+    "visionAutentic": "Sitio web informativo + funcionalidad de tienda online.",
+    "LMViajes": "Sitio web informativo, con formulario para captar leads y botón de WhatsApp.",
+    "SebasBlog": "Blog con entradas en Sanity.io, changelog desarrollado de cero, carrito de compras y Auth con firebase.",
+    "JALF-dashboard": "Aplicación web para gestionar stock, pedidos, clientes y organización del negocio.",
+    "1000tickets": "Sitio web de tickets online, diseñado con el estilo que pidio el cliente y desarrollado por un experto en PHP.",
+    "barboza": "Sitio web con funcionalidad de tienda online y informacion detallada sobre como trabajan.",
+    "regodeo": "Sitio web informativo sobre servicios de catering",
+    "casagabra": "Tienda online con sistema de login / registro de usuarios",
+    "merPoledance": "Sitio web educativo para escuela de Poledance.",
+    "federagro": "Sitio web informativo basado en el diseño que pidio el cliente"
   },
   "meeting": {
     "small": "¿TIENES DUDAS?",

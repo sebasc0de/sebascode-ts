@@ -1,25 +1,10 @@
-import { useEffect } from 'react';
 import { works } from '../../data/Works';
 import { PortfolioCard } from './PortfolioCard';
-import { TestimonialStore } from '../../zustand/TestimonialsStore';
 import { useTranslation } from 'react-i18next';
 
 export const Portfolio = () => {
   // i18next translation
   const [t] = useTranslation('global');
-
-  // Testimonial pop up
-  const setShowTestimonial = TestimonialStore((state) => state.setShow);
-
-  // useEffect(() => {
-  //   const target = document.getElementById('portfolio');
-
-  //   const observer = new IntersectionObserver(setShowTestimonial, {
-  //     rootMargin: '10%',
-  //   });
-
-  //   target && observer.observe(target);
-  // });
 
   return (
     <>
