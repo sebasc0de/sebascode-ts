@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
-import { Dialog } from './Dialog';
+import { useTranslation } from "react-i18next";
+import { Dialog } from "./Dialog";
 
 export const HeroSection = () => {
-  const [t] = useTranslation('global');
+  const [t] = useTranslation("global");
 
   return (
     <>
@@ -12,7 +12,7 @@ export const HeroSection = () => {
           {/* Titulo */}
           <div>
             <h2 className="font-extrabold text-center text-black text-2xl md:text-4xl">
-              {t('heroSection.main-title')}
+              {t("heroSection.main-title")}
             </h2>
           </div>
 
@@ -25,10 +25,10 @@ export const HeroSection = () => {
             {/* Text */}
             <div className="md:w-96">
               <h2 className="font-bold text-sm md:text-xl text-black">
-                {t('heroSection.aboutProjects')}
+                {t("heroSection.aboutProjects")}
               </h2>
               <small className="text-gray-500 text-xs md:text-sm">
-                {t('heroSection.aboutProjectsText')}
+                {t("heroSection.aboutProjectsText")}
               </small>
             </div>
           </div>
@@ -38,18 +38,18 @@ export const HeroSection = () => {
             {/* React js budget */}
             <div className="bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-sm font-bold text-zinc-700 ">
               <img src="/img/react.png" className="w-5 mr-3" />
-              {t('heroSection.reactWebApps')}
+              {t("heroSection.reactWebApps")}
             </div>
             {/* Wordpress budget */}
             <div className="bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-sm font-bold text-zinc-700 ">
               <img src="/img/wordpress.png" className="w-5 mr-3" />
-              {t('heroSection.wordpressWebs')}
+              {t("heroSection.wordpressWebs")}
             </div>
             {/* Action */}
             <div className="mt-10">
               <a href="https://api.whatsapp.com/send?phone=+5491151132129">
                 <button className="bg-black text-white rounded-md p-2 text-sm font-medium">
-                  {t('heroSection.contactButton')}
+                  {t("heroSection.contactButton")}
                 </button>
               </a>
             </div>
