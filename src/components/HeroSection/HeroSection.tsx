@@ -47,7 +47,7 @@ export const HeroSection = () => {
             </div>
             {/* Action */}
             <div className="mt-10">
-              <a href="https://api.whatsapp.com/send?phone=+5491151132129">
+              <a href="#meet">
                 <button className="bg-blue-600 text-white rounded-full p-2 text-md w-32 font-medium">
                   {t("heroSection.contactButton")}
                 </button>
