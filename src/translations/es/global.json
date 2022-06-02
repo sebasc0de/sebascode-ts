@@ -1,8 +1,8 @@
 {
   "heroSection": {
-    "main-title": "Desarrollador front end",
+    "main-title": "Desarrollador full stack",
     "aboutProjects": "Sobre mis proyectos",
-    "aboutProjectsText": "Tengo 28 años, vivo en Buenos Aires y realizo proyectos en todo LATAM. Mis proyectos son personalizados, mis presupuestos también.",
+    "aboutProjectsText": "Mi nombre es Sebastian Diaz, tengo 28 años y vivo en Buenos Aires, Argentina. Desarrollo proyectos en LATAM. Mis proyectos y presupuestos son personalizados",
     "reactWebApps": "Desarrollo de aplicaciones web con React JS",
     "wordpressWebs": "Diseño de sitios web con wordpress",
     "contactButton": "Contactar"
@@ -50,5 +50,15 @@
     "title": "Agenda una reunion conmigo!",
     "desc": "Preguntame todo lo que necesites en una reunion mediante Google Meet / Zoom.",
     "button": "Agendar"
+  },
+  "loaders": {
+    "0": "Aprendo algo nuevo todos los dias",
+    "1": "Odio la inpuntualidad",
+    "2": "Me encantan los animales",
+    "3": "Adoro la comida",
+    "4": "Friend's lover",
+    "5": "Cuando quiero algo, no paro hasta lograrlo.",
+    "6": "Soy copado con todo el mundo",
+    "7": "Me cuesta pronunciar bien el ingles"
   }
 }
