@@ -1,6 +1,7 @@
 import { useState } from "react";
 import i18next from "i18next";
 import { Loader } from "../Loader/Loader";
+import { Button } from "../UI/Button";
 
 export const LanguageToggler = () => {
   // Change language state
@@ -24,21 +25,9 @@ export const LanguageToggler = () => {
       {loading && <Loader />}
       <div className="fixed bottom-3 left-3 z-20">
         {inEnlgish ? (
-          <button
-            onClick={() => toggleLanguageHandler("es")}
-            className="flex gap-2 items-center bg-black shadow-sm shadow-black rounded-md py-1 px-3"
-          >
-            <img src="/img/eeuu.png" className="w-5" alt="" />
-            <p className="text-xs text-white font-medium">English</p>
-          </button>
+          <Button action={() => toggleLanguageHandler("es")} text="English" />
         ) : (
-          <button
-            onClick={() => toggleLanguageHandler("en")}
-            className="flex gap-2 items-center bg-black shadow-sm shadow-black rounded-md py-1 px-3"
-          >
-            <img src="/img/argentina.png" className="w-5" alt="" />
-            <p className="text-xs text-white font-medium">Español</p>
-          </button>
+          <Button action={() => toggleLanguageHandler("en")} text="Español" />
         )}
       </div>
     </>

@@ -7,9 +7,9 @@ export const HeroSection = () => {
   return (
     <>
       <div className="flex flex-col lg:flex-row lg:min-h-auto">
-        {/* Izquierda */}
-        <div className="p-3 py-10 md:p-10 grow flex flex-col items-center justify-start gap-8 md:gap-16">
-          {/* Titulo */}
+        {/* Left section */}
+        <section className="p-3 py-10 md:p-10 grow flex flex-col items-center justify-start gap-8 md:gap-16">
+          {/* Title */}
           <div>
             <h2 className="font-extrabold text-center text-black text-2xl md:text-4xl">
               {t("heroSection.main-title")}
@@ -54,9 +54,9 @@ export const HeroSection = () => {
               </a>
             </div>
           </div>
-        </div>
-        {/* Derecha */}
-        <div className=" bg-slate-50 lg:w-1/2 relative">
+        </section>
+        {/* Right section */}
+        <section className=" bg-slate-50 lg:w-1/2 relative">
           <Dialog />
           <div className="absolute flex gap-1.5 top-2 right-2">
             <a
@@ -90,7 +90,7 @@ export const HeroSection = () => {
               <img src="/icons/youtube.png" />
             </a>
           </div>
-        </div>
+        </section>
       </div>
     </>
   );
