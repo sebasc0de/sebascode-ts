@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
-import { Skills } from '../../interfaces/Skills';
+import { useTranslation } from "react-i18next";
+import { Skill } from "../../interfaces/Skill";
 
-export const SkillItem = (skill: Skills) => {
-  const [t] = useTranslation('global');
+export const SkillItem = (skill: Skill) => {
+  const [t] = useTranslation("global");
 
   return (
     <div className="bg-white flex flex-col items-center justify-center p-3 md:p-5 lg:py-20 rounded-md drop-shadow-sm">

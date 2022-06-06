@@ -1,16 +1,18 @@
 import "../../src/App.css";
+import { AboutMe } from "../components/Skills/Skills";
 import { HeroSection } from "../components/HeroSection/HeroSection";
-import { LanguageToggler } from "../components/LanguageToggler/LanguageToggler";
 import { Meet } from "../components/Meet/Meet";
 import { Portfolio } from "../components/Portfolio/Portfolio";
-import { Skills } from "../components/Skills/Skills";
+import { ModalToggler } from "../components/Modal/ModalToggler";
+import { Container } from "../components/Modal/Container";
 
 function App() {
   return (
     <>
-      <LanguageToggler />
+      <ModalToggler /> {/* Toggler for open modal */}
+      <Container /> {/* Modal window */}
       <HeroSection />
-      <Skills />
+      <AboutMe />
       <Portfolio />
       <Meet />
     </>

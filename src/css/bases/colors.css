@@ -16,7 +16,7 @@
 }
 
 .text-apple {
-  color: var(--apple-text-gray);
+  color: var(--apple-text-gray-900);
 }
 
 .text-apple-500 {
