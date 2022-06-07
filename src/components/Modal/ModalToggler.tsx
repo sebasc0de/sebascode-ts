@@ -1,4 +1,4 @@
-import { ModalStore } from "./store";
+import { ModalStore } from "./store/store";
 
 export const ModalToggler = () => {
   const setIsOpen = ModalStore((state) => state.setIsOpen);

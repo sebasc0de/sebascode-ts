@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Tabs } from "../UI/Tabs/Tabs";
 
 export const Modal = () => {
   return (
@@ -8,7 +9,7 @@ export const Modal = () => {
       exit={{ x: 1000, transition: { duration: 1, delay: 0.2 } }}
       className="fixed z-50 top-0 right-0 bg-white shadow-xl shadow-black/30 h-screen w-96"
     >
-      a
+      <Tabs />
     </motion.div>
   );
 };

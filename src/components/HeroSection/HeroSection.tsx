@@ -38,12 +38,12 @@ export const HeroSection = () => {
           <div className="flex flex-col gap-3 w-11/12 md:w-96">
             {/* React js budget */}
             <div className="bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-sm font-bold text-zinc-700 ">
-              <img src="/img/react.png" className="w-5 mr-3" />
+              <img src="/logos/react.png" className="w-5 mr-3" />
               {t("heroSection.reactWebApps")}
             </div>
             {/* Wordpress budget */}
             <div className="bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-sm font-bold text-zinc-700 ">
-              <img src="/img/wordpress.png" className="w-5 mr-3" />
+              <img src="/logos/wordpress.png" className="w-5 mr-3" />
               {t("heroSection.wordpressWebs")}
             </div>
             {/* Action */}

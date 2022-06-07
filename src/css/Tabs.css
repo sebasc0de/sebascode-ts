@@ -1,0 +1,66 @@
+.tab {
+  color: gray;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: var(--apple-text-gray-900);
+  transition: color 0.5s;
+}
+
+/*Tab Items container*/
+.tabItem {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1rem;
+  position: relative;
+}
+
+.tabItemsContainer {
+  overflow-y: scroll;
+  height: 36rem;
+}
+
+.tabItemsContainer::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Learning skill */
+
+.learningSkill a {
+  color: var(--apple-text-gray-900);
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+}
+
+.learningSkill a:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.learningSkill small {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Youtube video */
+
+.youtubeVideo a {
+  color: var(--apple-text-gray-900);
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+}
+
+.youtubeVideo a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.youtubeVideo small {
+  font-size: 12px;
+  color: gray;
+}

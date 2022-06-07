@@ -1,42 +1,44 @@
+import { v4 as uuid } from "uuid";
+
 export const mySkills = [
   {
-    id: 1,
+    id: uuid(),
     title: "React",
-    img: "/img/react.png",
+    img: "/logos/react.png",
   },
   {
-    id: 2,
+    id: uuid(),
     title: "Redux",
-    img: "/img/redux.png",
+    img: "/logos/redux.png",
   },
   {
-    id: 3,
+    id: uuid(),
     title: "Firebase",
-    img: "/img/firebase.png",
+    img: "/logos/firebase.png",
   },
   {
-    id: 4,
+    id: uuid(),
     title: "Tailwind",
-    img: "/img/tailwind.png",
+    img: "/logos/tailwind.png",
   },
   {
-    id: 5,
+    id: uuid(),
     title: "Bootstrap",
-    img: "/img/bootstrap.png",
+    img: "/logos/bootstrap.png",
   },
   {
-    id: 6,
+    id: uuid(),
     title: "Photoshop",
-    img: "/img/photoshop.png",
+    img: "/logos/photoshop.png",
   },
   {
-    id: 7,
+    id: uuid(),
     title: "Wordpress",
-    img: "/img/wordpress.png",
+    img: "/logos/wordpress.png",
   },
   {
-    id: 8,
+    id: uuid(),
     title: "Elementor",
-    img: "/img/elementor.png",
+    img: "/logos/elementor.png",
   },
 ];

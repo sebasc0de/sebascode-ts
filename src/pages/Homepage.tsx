@@ -6,7 +6,7 @@ import { Portfolio } from "../components/Portfolio/Portfolio";
 import { ModalToggler } from "../components/Modal/ModalToggler";
 import { Container } from "../components/Modal/Container";
 
-function App() {
+function Homepage() {
   return (
     <>
       <ModalToggler /> {/* Toggler for open modal */}
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default Homepage;
