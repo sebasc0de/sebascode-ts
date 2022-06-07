@@ -64,3 +64,22 @@
   font-size: 12px;
   color: gray;
 }
+
+/* Instagram Item video */
+
+.instagramItem a {
+  color: var(--apple-text-gray-900);
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+}
+
+.instagramItem a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.instagramItem small {
+  font-size: 12px;
+  color: gray;
+}

@@ -11,21 +11,21 @@ export const Tabs = () => {
       <div className="flex justify-around py-5">
         <div
           onClick={() => setState(1)}
-          className={state === state ? "tab active" : "tab"}
+          className={state === 1 ? "tab active" : "tab"}
         >
-          Aprendiendo
+          Dev Experience
         </div>
         <div
           onClick={() => setState(2)}
           className={state === 2 ? "tab active" : "tab"}
         >
-          Youtube
+          Youtube Channel
         </div>
         <div
           onClick={() => setState(3)}
           className={state === 3 ? "tab active" : "tab"}
         >
-          Instagram
+          In Instagram
         </div>
       </div>
       {/* Tabs container */}
