@@ -5,7 +5,7 @@ export const SkillItem = (skill: Skill) => {
   const [t] = useTranslation("global");
 
   return (
-    <div className="bg-white flex flex-col items-center justify-center p-3 md:p-5 lg:py-20 rounded-md drop-shadow-sm">
+    <div className="bg-white flex flex-col items-center justify-center p-3 md:p-5 lg:py-10 rounded-md drop-shadow-sm">
       <img src={skill.img} className="w-20 mb-3" />
       <div>
         <h2 className="text-center font-semibold">{skill.title}</h2>

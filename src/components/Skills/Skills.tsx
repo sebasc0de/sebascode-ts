@@ -12,7 +12,7 @@ export const AboutMe = () => {
       </h2>
 
       {/* Skills OLD GRID */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-5">
+      <div className="grid overflow-y-scroll h-96 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 mt-5">
         {mySkills.map((skill) => (
           <SkillItem key={skill.id} {...skill} />
         ))}

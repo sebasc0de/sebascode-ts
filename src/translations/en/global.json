@@ -13,14 +13,16 @@
   },
   "skillsSection": {
     "title": "Skills",
-    "React": "1 year of experience with React JS",
-    "Redux": "1 year of experience with Redux",
-    "Firebase": "1 year of experience with Firebase",
-    "Tailwind": "2 years of experience with Tailwind",
-    "Bootstrap": "4 years of experience with Bootstrap",
-    "Photoshop": "10+ years of experience with Photoshop",
-    "Wordpress": "4 years of experience with Wordpress",
-    "Elementor": "3 years of experience with Elementor"
+    "React": "1 year of experience",
+    "Redux": "1 year of experience",
+    "Node JS": "3 months of experience",
+    "Mongo DB": "3 months of experience",
+    "Firebase": "1 year of experience",
+    "Tailwind": "2 years of experience",
+    "Bootstrap": "4 years of experience",
+    "Photoshop": "10+ years of experience",
+    "Wordpress": "4 years of experience",
+    "Elementor": "3 years of experience"
   },
   "portfolio": {
     "title": "My works"

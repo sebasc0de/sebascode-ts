@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Work } from "../interfaces/Works";
 
 export const useFilter = (worksArray: Work[]) => {
-  const [type, setType] = useState("Full Stack");
+  const [type, setType] = useState<"Full Stack" | "Wordpress">("Full Stack");
 
   const [results, setResults] = useState<Work[]>([]);
 
@@ -11,5 +11,5 @@ export const useFilter = (worksArray: Work[]) => {
     setResults(filterResults);
   }, [type]);
 
-  return { results, setType };
+  return { results, type, setType };
 };

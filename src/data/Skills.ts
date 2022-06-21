@@ -13,6 +13,16 @@ export const mySkills = [
   },
   {
     id: uuid(),
+    title: "Node JS",
+    img: "/logos/nodejs.png",
+  },
+  {
+    id: uuid(),
+    title: "Mongo DB",
+    img: "/logos/mongodb.png",
+  },
+  {
+    id: uuid(),
     title: "Firebase",
     img: "/logos/firebase.png",
   },

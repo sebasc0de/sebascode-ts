@@ -5,7 +5,7 @@ import { WorksFilter } from "../UI/WorksFilter";
 import { useFilter } from "../../hooks/useFilter";
 
 export const Portfolio = () => {
-  const { results, setType } = useFilter(works);
+  const { results, setType, type } = useFilter(works);
 
   // i18next translation
   const [t] = useTranslation("global");
@@ -17,7 +17,7 @@ export const Portfolio = () => {
           <h2 className="font-bold text-left text-2xl">
             {t("portfolio.title")}
           </h2>
-          <WorksFilter setType={setType} />
+          <WorksFilter type={type} setType={setType} />
         </div>
         {/* Services grid */}
         <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5">
