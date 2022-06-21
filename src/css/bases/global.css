@@ -11,6 +11,10 @@ body::-webkit-scrollbar-track {
   background: #fbfbfb;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -1,29 +1,26 @@
-import { useTranslation } from 'react-i18next';
-import { Works } from '../../interfaces/Works';
-import { colorConverter } from './helpers/colorConverter';
+import { colorConverter } from "./helpers/colorConverter";
+import { useTranslation } from "react-i18next";
+import { Work } from "../../interfaces/Works";
 
-export const PortfolioCard = (work: Works) => {
+export const PortfolioCard = (work: Work) => {
   // Translation
-  const [t] = useTranslation('global');
+  const [t] = useTranslation("global");
 
   return (
-    <div className="h-fit bg-white border border-gray-200 rounded-sm flex-col">
+    <div className="fade-in-top h-fit bg-white border border-gray-200 rounded-sm flex-col">
       {/* Header */}
       <div className="relative ">
         <img src={work.img} />
-        <div className="absolute top-0 flex justify-end w-full">
-          {work.online ? (
-            <a href={work.url}>
-              <button className="m-3 bg-none border-2 border-white rounded-full text-xs text-white p-1 px-5 font-bold hover:bg-white hover:text-black transition ease-in-out delay-10">
-                {t('portfolioCards.stateTag.online')}
-              </button>
+        {work.gitHub && (
+          <div className="absolute bottom-2 right-2 flex justify-end">
+            <a
+              href={work.gitHub}
+              className="w-8 h-8 p-1 bg-white rounded-md drop-shadow-lg"
+            >
+              <img src="/logos/github.png" />
             </a>
-          ) : (
-            <span className="m-3 bg-none border-2 border-white rounded-full text-xs text-white p-1 px-5 font-bold">
-              {t('portfolioCards.stateTag.inactive')}
-            </span>
-          )}
-        </div>
+          </div>
+        )}
       </div>
       {/* Body */}
       <div className="p-3 h-28">
@@ -35,8 +32,7 @@ export const PortfolioCard = (work: Works) => {
         </div>
       </div>
       {/* Footer */}
-      <div className="border-t border-gray-100 flex items-center justify-between p-3">
-        <div className="md:hidden lg:block text-xs text-gray-400">⚡</div>
+      <div className="border-t border-gray-100 flex items-center justify-end p-3">
         <div className="flex gap-1">
           {work.tags.map((tag: string) => (
             <div
