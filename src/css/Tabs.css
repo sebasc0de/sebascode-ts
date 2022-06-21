@@ -20,7 +20,7 @@
 
 .tabItemsContainer {
   overflow-y: scroll;
-  height: 36rem;
+  height: 770px;
 }
 
 .tabItemsContainer::-webkit-scrollbar {

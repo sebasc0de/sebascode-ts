@@ -1,22 +1,27 @@
-import { works } from '../../data/Works';
-import { PortfolioCard } from './PortfolioCard';
-import { useTranslation } from 'react-i18next';
+import { works } from "../../data/Works";
+import { PortfolioCard } from "./PortfolioCard";
+import { useTranslation } from "react-i18next";
+import { WorksFilter } from "../UI/WorksFilter";
+import { useFilter } from "../../hooks/useFilter";
 
 export const Portfolio = () => {
+  const { results, setType } = useFilter(works);
+
   // i18next translation
-  const [t] = useTranslation('global');
+  const [t] = useTranslation("global");
 
   return (
     <>
-      <div id="portfolio" className="p-10 bg-white flex flex-col items-start">
-        <div className=" flex items-center">
+      <div id="portfolio" className="p-5 lg:p-10 bg-white flex flex-col">
+        <div className="flex items-center justify-between w-full">
           <h2 className="font-bold text-left text-2xl">
-            {t('portfolio.title')}
+            {t("portfolio.title")}
           </h2>
+          <WorksFilter setType={setType} />
         </div>
         {/* Services grid */}
         <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5">
-          {works.map((work) => (
+          {results.map((work) => (
             <PortfolioCard key={work.id} {...work} />
           ))}
         </div>

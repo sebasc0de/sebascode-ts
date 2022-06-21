@@ -75,12 +75,4 @@ export const LearningSkills: LearningSkill[] = [
     instructorUrl: "https://www.udemy.com/course/react-cero-experto/",
     module: "Completed course",
   },
-  {
-    id: uuid(),
-    name: "React PRO - Fernando Herrera",
-    completed: false,
-    img: "./logos/reactJs.jpg",
-    instructorUrl: "https://www.udemy.com/course/react-pro/",
-    module: "Completed at module 8",
-  },
 ];

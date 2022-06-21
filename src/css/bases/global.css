@@ -14,3 +14,12 @@ body::-webkit-scrollbar-track {
 html {
   scroll-behavior: smooth;
 }
+
+select {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: gray;
+  font-size: 14px;
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  -webkit-appearance: none;
+}
