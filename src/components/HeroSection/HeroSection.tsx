@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { Button } from "../UI/Button";
+import { Href } from "../UI/Href";
 import { RRSS } from "../UI/RRSS";
 import { Dialog } from "./Dialog";
 
@@ -37,22 +39,31 @@ export const HeroSection = () => {
           {/* Action */}
           <div className="flex flex-col gap-3 w-11/12 md:w-96">
             {/* React js budget */}
-            <div className="bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-sm font-bold text-zinc-700 ">
-              <img src="/logos/react.png" className="w-5 mr-3" />
+            <div className="bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex lg:text-sm font-bold text-zinc-700 text-xs">
+              <img src="/logos/react.png" className="w-5 mr-3 object-contain" />
               {t("heroSection.reactWebApps")}
             </div>
             {/* Wordpress budget */}
-            <div className="bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex text-sm font-bold text-zinc-700 ">
-              <img src="/logos/wordpress.png" className="w-5 mr-3" />
+            <div className="bg-white rounded-md border border-gray-100 drop-shadow-sm p-1 px-3 flex lg:text-sm font-bold text-zinc-700 text-xs">
+              <img
+                src="/logos/wordpress.png"
+                className="w-5 mr-3 object-contain"
+              />
               {t("heroSection.wordpressWebs")}
             </div>
             {/* Action */}
-            <div className="mt-10">
+            <div className="mt-10 flex gap-3">
               <a href="#meet">
                 <button className="bg-blue-600 text-white rounded-full p-2 text-md w-32 font-medium">
                   {t("heroSection.contactButton")}
                 </button>
               </a>
+              {/* Curriculum button */}
+              <Href
+                outline
+                text="Curriculum"
+                url="https://www.dropbox.com/s/zmnbqqpibkylwdc/Curriculum.pdf?dl=0"
+              />
             </div>
           </div>
         </section>
