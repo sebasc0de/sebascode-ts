@@ -18,7 +18,7 @@
 
 @keyframes expandDown {
   from {
-    height: 8rem;
+    height: 7rem;
   }
   to {
     height: 15rem;
@@ -30,7 +30,7 @@
     height: 14rem;
   }
   to {
-    height: 8rem;
+    height: 7rem;
   }
 }
 
@@ -38,19 +38,19 @@
 @media screen and (max-width: 1024px) {
   @keyframes expandDown {
     from {
-      height: 8rem;
+      height: 7rem;
     }
     to {
-      height: 15rem;
+      height: 14rem;
     }
   }
 
   @keyframes expandUp {
     from {
-      height: 15rem;
+      height: 14rem;
     }
     to {
-      height: 8rem;
+      height: 6.5rem;
     }
   }
 }
