@@ -1,0 +1,25 @@
+.expandDown {
+  animation: expandDown 0.5s ease-in-out forwards;
+}
+
+.expandUp {
+  animation: expandUp 0.5s ease-in-out forwards;
+}
+
+@keyframes expandDown {
+  from {
+    height: 8rem;
+  }
+  to {
+    height: 15rem;
+  }
+}
+
+@keyframes expandUp {
+  from {
+    height: 14rem;
+  }
+  to {
+    height: 8rem;
+  }
+}
