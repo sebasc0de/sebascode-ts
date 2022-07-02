@@ -3,7 +3,7 @@ import { PortfolioCard } from "./PortfolioCard";
 import { useTranslation } from "react-i18next";
 import { WorksFilter } from "../UI/WorksFilter";
 import { useFilter } from "../../hooks/useFilter";
-import { Card } from "../UI/Card";
+import { Card } from "../UI/Card/Card";
 
 export const Portfolio = () => {
   const { results, setType, type } = useFilter(works);

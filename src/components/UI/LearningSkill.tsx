@@ -6,10 +6,13 @@ export const LearningSkill = (item: Type) => {
       {/* Skill image */}
 
       <div className="relative">
-        <img className="w-10 h-10 bg-gray-500 rounded-md" src={item.img} />
+        <img
+          className="w-10 h-10 bg-gray-500 rounded-md object-cover"
+          src={item.img}
+        />
         {item.completed && (
           <img
-            className="w-4 absolute -left-2 -top-2"
+            className="w-3 md:w-4 absolute -left-2 -top-2"
             src="./icons/check.png"
           />
         )}
@@ -17,7 +20,7 @@ export const LearningSkill = (item: Type) => {
 
       {/* Skill info */}
       <div>
-        <a target={"_blank"} href={item.instructorUrl}>
+        <a className="text-xs" target={"_blank"} href={item.instructorUrl}>
           {item.name}
         </a>
         <small>{item.module}</small>

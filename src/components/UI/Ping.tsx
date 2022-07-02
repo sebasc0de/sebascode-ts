@@ -1,8 +1,20 @@
-export const Ping = () => {
+interface Props {
+  position: string;
+  size: string;
+}
+
+export const Ping = ({
+  position = "right-0 top-0",
+  size = "w-2.5 h-2.5",
+}: Props) => {
   return (
     <>
-      <div className="w-2.5 h-2.5 block bg-green-600 absolute rounded-full top-0 -right-1"></div>
-      <div className="w-2.5 h-2.5 animate-ping block bg-green-600 absolute rounded-full top-0 -right-1"></div>
+      <div
+        className={`${size} block bg-green-600 absolute rounded-full ${position}`}
+      ></div>
+      <div
+        className={`${size} animate-ping block bg-green-600 absolute rounded-full ${position}`}
+      ></div>
     </>
   );
 };
