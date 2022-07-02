@@ -3,14 +3,14 @@ export const returnTechImage = (techonology: string): string => {
     case "typescript":
       return "bg-blue-600";
 
-    case "zustand":
-      return "bg-orange-300";
+    case "mongodb":
+      return "./logos/mongodb.png";
 
     case "react-router-dom":
       return "bg-red-500";
 
-    case "wp":
-      return "bg-blue-500";
+    case "nodejs":
+      return "./logos/nodejs.png";
 
     case "html":
       return "bg-red-500";

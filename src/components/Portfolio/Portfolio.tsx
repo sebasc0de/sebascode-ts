@@ -22,8 +22,9 @@ export const Portfolio = () => {
         </div>
         {/* Services grid */}
         <div className="grid gap-5 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-5">
-          {type === "Full Stack" &&
-            results.map((item) => <Card key={item.id} {...item} />)}
+          {type === "Full Stack"
+            ? results.map((item) => <Card key={item.id} {...item} />)
+            : results.map((item) => <PortfolioCard key={item.id} {...item} />)}
         </div>
         {/* End services grid */}
       </div>

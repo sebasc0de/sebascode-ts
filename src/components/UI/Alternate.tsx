@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const Alternate = ({ children }: Props) => {
-  const [alternate, setAlternate] = useState(false);
+  const [alternate, setAlternate] = useState(true);
 
   return (
     <div
