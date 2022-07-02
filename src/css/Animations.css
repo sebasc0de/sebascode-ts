@@ -1,9 +1,19 @@
 .expandDown {
-  animation: expandDown 0.5s ease-in-out forwards;
+  animation: expandDown 0.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .expandUp {
-  animation: expandUp 0.5s ease-in-out forwards;
+  animation: expandUp 0.3s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @keyframes expandDown {
@@ -21,5 +31,66 @@
   }
   to {
     height: 8rem;
+  }
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  @keyframes expandDown {
+    from {
+      height: 8rem;
+    }
+    to {
+      height: 15rem;
+    }
+  }
+
+  @keyframes expandUp {
+    from {
+      height: 15rem;
+    }
+    to {
+      height: 8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes expandDown {
+    from {
+      height: 12rem;
+    }
+    to {
+      height: 19rem;
+    }
+  }
+
+  @keyframes expandUp {
+    from {
+      height: 19rem;
+    }
+    to {
+      height: 12rem;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  @keyframes expandDown {
+    from {
+      height: 12rem;
+    }
+    to {
+      height: 19rem;
+    }
+  }
+
+  @keyframes expandUp {
+    from {
+      height: 19rem;
+    }
+    to {
+      height: 12rem;
+    }
   }
 }

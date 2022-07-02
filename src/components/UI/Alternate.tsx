@@ -10,7 +10,7 @@ export const Alternate = ({ children }: Props) => {
 
   return (
     <div
-      className={`relative shadow-sm shadow-black/20 p-3 md:px-5 md:py-5  rounded-lg flex flex-col gap-3 overflow-hidden ${
+      className={`relative shadow-sm shadow-black/20 p-3 md:px-5 md:py-5 rounded-lg flex flex-col gap-3 overflow-hidden ${
         alternate ? "expandDown" : "expandUp"
       }`}
     >

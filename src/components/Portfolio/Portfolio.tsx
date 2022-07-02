@@ -21,7 +21,7 @@ export const Portfolio = () => {
           <WorksFilter type={type} setType={setType} />
         </div>
         {/* Services grid */}
-        <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5">
+        <div className="grid gap-5 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-5">
           <Card />
         </div>
         {/* End services grid */}

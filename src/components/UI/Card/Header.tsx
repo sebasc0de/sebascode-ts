@@ -14,7 +14,7 @@ export const Header = ({
   return (
     <div className="flex flex-col md:flex-row items-center gap-5">
       <img src="./logos/codery.png" className="w-20 md:w-14 object-contain" />
-      <div className="leading-4">
+      <div className="leading-4 w-full">
         <h5 className="font-bold w-fit mb-2">Codery</h5>
         <p className="text-gray-500 text-xs md:text-sm">
           Su objetivo es crear una experiencia de compra unica entre
