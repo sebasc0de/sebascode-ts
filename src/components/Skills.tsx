@@ -1,8 +1,8 @@
+import { mySkills } from "../data/Skills";
+import { SkillItem } from "../components/UI/SkillItem";
 import { useTranslation } from "react-i18next";
-import { mySkills } from "../../data/Skills";
-import { SkillItem } from "./SkillItem";
 
-export const AboutMe = () => {
+export const Skills = () => {
   const [t] = useTranslation("global");
 
   return (

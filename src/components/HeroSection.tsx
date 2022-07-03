@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { Button } from "../UI/Button";
-import { Href } from "../UI/Href";
-import { RRSS } from "../UI/RRSS";
+import { Href } from "./UI/Href";
+import { RRSS } from "./UI/RRSS";
 import { Dialog } from "./Dialog";
 
 export const HeroSection = () => {

@@ -1,8 +1,8 @@
 import "../../src/App.css";
-import { AboutMe } from "../components/Skills/Skills";
-import { HeroSection } from "../components/HeroSection/HeroSection";
-import { Meet } from "../components/Meet/Meet";
-import { Portfolio } from "../components/Portfolio/Portfolio";
+import { Skills } from "../components/Skills";
+import { HeroSection } from "../components/HeroSection";
+import { Meet } from "../components/Meet";
+import { Portfolio } from "../components/Portfolio";
 import { ModalToggler } from "../components/Modal/ModalToggler";
 import { Container } from "../components/Modal/Container";
 
@@ -12,7 +12,7 @@ function Homepage() {
       <ModalToggler /> {/* Toggler for open modal */}
       <Container /> {/* Modal window */}
       <HeroSection />
-      <AboutMe />
+      <Skills />
       <Portfolio />
       <Meet />
     </>

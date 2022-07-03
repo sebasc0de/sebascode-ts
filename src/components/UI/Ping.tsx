@@ -10,10 +10,10 @@ export const Ping = ({
   return (
     <>
       <div
-        className={`${size} block bg-green-600 absolute rounded-full ${position}`}
+        className={`${size} block bg-green-600 absolute rounded-full ${position} z-10`}
       ></div>
       <div
-        className={`${size} animate-ping block bg-green-600 absolute rounded-full ${position}`}
+        className={`${size} animate-ping z-20 block bg-green-600 absolute rounded-full ${position}`}
       ></div>
     </>
   );

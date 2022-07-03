@@ -1,96 +1,12 @@
-.expandDown {
-  animation: expandDown 0.5s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+.alternateDown {
+  animation: alternateDown 0.5s ease-in-out forwards;
 }
 
-.expandUp {
-  animation: expandUp 0.3s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-@keyframes expandDown {
-  from {
-    height: 7rem;
+@keyframes alternateDown {
+  0% {
+    height: 50%;
   }
-  to {
-    height: 15rem;
-  }
-}
-
-@keyframes expandUp {
-  from {
-    height: 14rem;
-  }
-  to {
-    height: 7rem;
-  }
-}
-
-/* Media queries */
-@media screen and (max-width: 1024px) {
-  @keyframes expandDown {
-    from {
-      height: 7rem;
-    }
-    to {
-      height: 14rem;
-    }
-  }
-
-  @keyframes expandUp {
-    from {
-      height: 14rem;
-    }
-    to {
-      height: 6.5rem;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  @keyframes expandDown {
-    from {
-      height: 12rem;
-    }
-    to {
-      height: 19rem;
-    }
-  }
-
-  @keyframes expandUp {
-    from {
-      height: 19rem;
-    }
-    to {
-      height: 12rem;
-    }
-  }
-}
-
-@media screen and (max-width: 640px) {
-  @keyframes expandDown {
-    from {
-      height: 12rem;
-    }
-    to {
-      height: 19rem;
-    }
-  }
-
-  @keyframes expandUp {
-    from {
-      height: 19rem;
-    }
-    to {
-      height: 12rem;
-    }
+  100% {
+    height: 17rem;
   }
 }

@@ -3,6 +3,7 @@ export interface Work {
   name: string;
   displayName: string;
   desc: string;
+  progress?: string;
   img: string;
   url?: string;
   gitHub?: string;

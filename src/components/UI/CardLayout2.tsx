@@ -1,8 +1,8 @@
-import { colorConverter } from "./helpers/colorConverter";
+import { colorConverter } from "../../helpers/colorConverter";
 import { useTranslation } from "react-i18next";
 import { Work } from "../../interfaces/Works";
 
-export const PortfolioCard = (work: Work) => {
+export const CardLayout2 = (work: Work) => {
   // Translation
   const [t] = useTranslation("global");
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import i18next from "i18next";
-import { Loader } from "../Loader/Loader";
+import { Loader } from "../UI/Loader";
 import { Button } from "../UI/Button";
 
 export const LanguageToggler = () => {
